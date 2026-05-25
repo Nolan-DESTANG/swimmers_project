@@ -1,0 +1,149 @@
+* {
+    border: 1px solid black;
+}
+
+html, body {
+    border: none;
+    font-family: arial, sans-serif;
+}
+
+/* Style for the banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: darkblue;
+    border-radius: 15px;
+}
+
+/* Style for the logo*/
+.logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 25%;
+    padding-left: 10px;
+}
+.logo {
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Style for the club name */
+.club_name_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    left: -365px;
+    position: relative;
+}
+
+.club_name {
+    font-size: 24px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.nav_link {
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.nav_link:hover {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+}
+
+/*texte présentant le club*/
+.presentation {
+    text-align: center;
+    padding: 20px;
+}
+
+.presentation h2 {
+    font-size: 40px;
+}
+
+.presentation p {
+    font-size: 20px;
+}
+
+/*sections de présentation pour tous les cours proposés: bébés, enfants et adultes*/
+.presentation_sections {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.presentation_sections h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.presentation_sections p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.presentation_sections img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.presentation_sections img:hover {
+    transform: scale(1.1);
+}
+
+.presentation_sections a {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+    margin-top: 90px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.presentation_sections a:hover {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+}

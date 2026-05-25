@@ -1,0 +1,445 @@
+/* {
+    border: 1px solid black;
+}*/
+
+html, body {
+    font-family: arial, sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+/*------------------------------STYLE DE LA PAGE D'ACCUEIL------------------------------*/
+
+/*------------------------------Bannière et barre de navigation------------------------------*/
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background-color: darkblue;
+    /*position: sticky;
+    top: -10px;*/
+    border-radius: 0 0 15px 15px;
+    z-index: 100;
+}
+
+/*logo */
+.logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 25%;
+    padding-left: 10px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/*nom du club*/
+.club_name_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    left: -365px;
+    position: relative;
+}
+
+.club_name {
+    font-size: 24px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    margin-top: 10px;
+}
+
+/*barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 70px;
+}
+
+/*boutons DE navigation*/
+.nav_link {
+    width: 100px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: darkblue;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+    margin-bottom: 20px;
+    margin-top: -45px;
+}
+
+.nav_link:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+/*menu déroulant des boutons de navigation*/
+
+/*container du menu déroulant*/
+.menu_deroulant {
+    position:relative;
+    display: inline-block;
+    margin-top: -35px;
+    transition: all 0.5s linear;
+}
+
+/*options du menu déroulant*/
+.options {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 100;
+    transition: all 0.5s linear;
+    padding-top: 10px;
+}
+
+.menu_deroulant:hover .options {
+    display: block;
+}
+
+/*style du menu déroulant*/
+.options a {
+    width: 200px;
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+    background-color: darkblue;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+}
+
+.options a:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+/*------------------------------bouton de retour en haut de page------------------------------*/
+.back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: darkblue;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s linear;
+    opacity: 0.5;
+    z-index: 100;
+}
+
+.back_to_top:hover {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+    opacity: 1;
+}
+
+/*--------------------------------cours proposés------------------------------*/
+
+/*texte de présentation du club*/
+.presentation {
+    text-align: center;
+    padding: 20px;
+}
+
+/*sections de présentation pour tous les cours proposés: bébés, enfants et adultes*/
+
+/*conteneur du tableau de présentation des cours*/
+.presentation_sections {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/*style des lignes, cellules et contenus du tableau*/
+.presentation_sections tr {
+    display:flex;
+    justify-content: space-between;;
+    padding: 10px;
+}
+
+.presentation_sections td {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 33%;
+}
+
+.presentation_sections img {
+    display: flex;
+    width: auto;
+    height: 250px;
+    border-radius: 15px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.presentation_sections img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+}
+
+.presentation_sections h2 {
+    width: 90%;
+    margin: 0 auto 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.presentation_sections p {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+/* textes et boutons "plus d'informations" des sections: cachés par défaut, s'affichent en fondu (JS) */
+.texte_cours {
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.plus_infos {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+.plus_infos:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+/*section présentation de l'équipe*/
+
+/*conteneur principal*/
+.equipe {
+    display: flex;
+    align-items: center;
+}
+
+/*conteneur de l'image du moniteur*/
+.coach_img {
+    display: block;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+
+.coach_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*conteneur de la description du moniteur et du bouton "plus d'informations"*/
+.coach_description {
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+    width: 70%;
+}
+
+.coach_description h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+.coach_description p {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+}
+
+/*bouton "plus d'informations" = ".plus_infos a" mais constamment visible*/
+.plus_infos_equipe {
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.plus_infos_equipe:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+/*------------------------------partenaires------------------------------*/
+.partenaires {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.partenaires h2 {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.logo_partenaire {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.logo_partenaire img {
+    width: auto;
+    height: 100px;
+    border-radius: 15px;
+}
+
+/*------------------------------footer------------------------------*/
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: darkblue;
+    border-radius: 15px 15px 0 0;
+}
+
+/*
+tableau dans le footer en 3 colonnes:
+    - logo du club et slogan
+    - contact: réeseaux sociaux, téléphone et mail, adresse
+    - menu de navigation
+*/
+.footer {
+    width: 100%;
+    height: 250px;
+    /*background-color: grey*/
+}
+
+/*colonne 1: logo et slogan*/
+.footer_logo {
+    width: 20%;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.footer_logo img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    left: 10%;
+}
+
+/*slogan sous le logo*/
+.footer_logo h3 {
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+}
+
+/*colonne 2: contact*/
+.footer_contact {
+    width: 40%;
+}
+
+/*tableau en 3 colonnes: réseaux, tél et mail, adresse*/
+.footer_contact table {
+    height: 95%;
+    width: 100%;
+}
+
+.contact {
+    width: 33%;
+}
+
+/*colonne réseaux*/
+.contact_content {
+    height: 90%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.logo_reseaux {
+    height: 50px;
+    width: auto;
+    border-radius: 15px;
+    transition: all 0.5s linear;
+}
+
+.logo_reseaux:hover {
+    transform: scale(1.1);
+}
+
+/*colonne téléphone et mail*/
+.contact p {
+    text-align: center;
+    color: white;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact a:hover {
+    text-decoration:underline;
+}
+
+/*colonne 3: menu de navigation*/
+.footer_nav_menu {
+    width: 40%;
+    flex-direction: column;
+}
