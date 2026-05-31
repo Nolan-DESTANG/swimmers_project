@@ -248,6 +248,7 @@ p {
     cursor: pointer;
     transition: all 0.5s linear;
     opacity: 0;
+    
 }
 
 .plus_infos:hover {
@@ -300,7 +301,7 @@ p {
 
 /*bouton "plus d'informations" = ".plus_infos a" mais constamment visible*/
 .plus_infos_equipe {
-    width: 150px;
+    width: 200px;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -396,7 +397,7 @@ tableau dans le footer en 3 colonnes:
 
 /*colonne 2: contact*/
 .footer_contact {
-    width: 40%;
+    width: 50%;
 }
 
     /*tableau en 3 colonnes: réseaux, tél et mail, adresse*/
@@ -446,8 +447,40 @@ tableau dans le footer en 3 colonnes:
 
 /*colonne 3: menu de navigation*/
 .footer_nav_menu {
-    width: 40%;
-    flex-direction: column;
+    width: 30%;
 }
 
-    
+    .footer_nav_menu table {
+        height: 90%;
+        display: flex;
+        justify-content:space-around ;
+    }
+
+    .footer_nav_menu tr {
+        height: 100%;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .footer_nav_menu td {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_nav_menu p {
+        color: white;
+        text-align: center;
+    }
+
+    .footer_nav_menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer_nav_menu a:hover {
+        text-decoration: underline;
+    }
