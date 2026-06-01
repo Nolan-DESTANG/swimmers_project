@@ -234,7 +234,7 @@ p {
 }
 
 .plus_infos {
-    width: 150px;
+    width: 300px;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
@@ -505,7 +505,34 @@ tableau dans le footer en 3 colonnes:
     /*color: white;*/
 }
 
+/*texte de présentation des règles des cours*/
 .texte_bebes_nageurs {
     text-align: center;
     font-weight: bold;
+}
+
+/*tableau de présentation des cours bébés*/
+.image_cours {
+    width: 15%;
+    justify-content: center;
+    align-content: center;
+}
+
+.image_cours img {
+    width: 100%;
+}
+
+.description_cours {
+    width: 85%;
+    justify-content: space-around;
+}
+
+.description_cours h2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.description_cours p {
+    padding: 20px;
 }
