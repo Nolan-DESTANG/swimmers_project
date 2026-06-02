@@ -1,4 +1,4 @@
-/* {
+* {
     border: 1px solid black;
 }*/
 
@@ -393,6 +393,7 @@ tableau dans le footer en 3 colonnes:
         font-size: 20px;
         justify-content: center;
         color: white;
+        font-family: Lucida Calligraphy;
     }
 
 /*colonne 2: contact*/
@@ -535,4 +536,28 @@ tableau dans le footer en 3 colonnes:
 
 .description_cours p {
     padding: 20px;
+}
+
+/*ligen du bouton d'inscription*/
+.inscrire {
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    border: 1px solid transparent;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s linear;    
+}
+
+.inscrire:hover {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
 }
