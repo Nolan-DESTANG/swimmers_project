@@ -241,7 +241,7 @@ p {
     color: white;
     background-color: darkblue;
     border: 1px solid transparent;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     display: block;
@@ -309,7 +309,7 @@ p {
     color: white;
     background-color: darkblue;
     border: 1px solid transparent;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     display: block;
@@ -492,7 +492,7 @@ tableau dans le footer en 3 colonnes:
     /*------------------------------STYLE DE LA PAGE DES BEBES NAGEURS------------------------------*/
 
 /*image de bébés nageurs avec le nom du cours dessus*/
-.titre_cours {
+.titre_cours_bebes {
     width: 100%;
     height: 600px;
     background-image: url(./images/page_bebes_nageurs.jpg);
@@ -500,21 +500,20 @@ tableau dans le footer en 3 colonnes:
     align-content: center;
 }
 
-.titre_cours h1 {
+.titre_cours {
     text-align: center;
     font-size: 100px;
-    /*color: white;*/
 }
 
 /*texte de présentation des règles des cours*/
-.texte_bebes_nageurs {
+.texte_regles {
     text-align: center;
     font-weight: bold;
 }
 
 /*tableau de présentation des cours bébés*/
 .image_cours {
-    width: 15%;
+    width: 20%;
     justify-content: center;
     align-content: center;
 }
@@ -524,7 +523,7 @@ tableau dans le footer en 3 colonnes:
 }
 
 .description_cours {
-    width: 85%;
+    width: 80%;
     justify-content: space-around;
 }
 
@@ -548,7 +547,7 @@ tableau dans le footer en 3 colonnes:
     color: white;
     background-color: darkblue;
     border: 1px solid transparent;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     display: block;
@@ -560,4 +559,15 @@ tableau dans le footer en 3 colonnes:
     background-color: white;
     color: darkblue;
     border: 1px solid darkblue;
+}
+
+    /*------------------------------STYLE DE LA PAGE DES COURS ENFANTS------------------------------*/
+
+/*image de bébés nageurs avec le nom du cours dessus*/
+.titre_cours_enfants {
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/cours_enfants.jpg);
+    background-size: cover;
+    align-content: center;
 }
