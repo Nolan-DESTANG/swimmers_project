@@ -1,4 +1,4 @@
-/* {
+* {
     border: 1px solid black;
 }*/
 
@@ -22,8 +22,6 @@ p {
     width: 100%;
     height: 150px;
     background-color: darkblue;
-    /*position: sticky;
-    top: -10px;*/
     border-radius: 0 0 15px 15px;
     z-index: 100;
 }
@@ -236,7 +234,7 @@ p {
 .plus_infos {
     width: 300px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
     color: white;
     background-color: darkblue;
@@ -304,7 +302,7 @@ p {
     width: 200px;
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
     color: white;
     background-color: darkblue;
@@ -520,21 +518,14 @@ tableau dans le footer en 3 colonnes:
 
 .image_cours img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .description_cours {
     width: 80%;
-    justify-content: space-around;
-}
-
-.description_cours h2 {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-
-.description_cours p {
-    padding: 20px;
+    height: auto;
+    align-items: center;
+    padding: 0 0 0 20px;
 }
 
 /*ligne du bouton d'inscription*/
@@ -542,7 +533,7 @@ tableau dans le footer en 3 colonnes:
     width: 300px;
     padding: 10px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
     color: white;
     background-color: darkblue;
@@ -593,3 +584,20 @@ tableau dans le footer en 3 colonnes:
     margin-left: 100px;
     font-weight: bold;
 }
+
+    /*------------------------------STYLE DE LA PAGE DES COURS ADULTES------------------------------*/
+/*image de bébés nageurs avec le nom du cours dessus*/
+.titre_cours_adultes {
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/cours_adultes.jpg);
+    background-size: cover;
+    align-content: center;
+}
+
+/*Réutilisation des mêmes paramètres pour:
+     - le titre du cours sur l'image
+     - le texte des règles
+     - le tableau de présentation des cours
+     - le bouton vers la page d'inscription
+*/
