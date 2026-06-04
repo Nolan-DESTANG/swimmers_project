@@ -1,4 +1,4 @@
-* {
+/* {
     border: 1px solid black;
 }*/
 
@@ -203,7 +203,7 @@ p {
 .presentation_sections img {
     display: flex;
     width: auto;
-    height: 250px;
+    height: 225px;
     border-radius: 15px;
     transition: all 0.3s linear;
     cursor: pointer;
@@ -513,7 +513,7 @@ tableau dans le footer en 3 colonnes:
 
 /*tableau de présentation des cours bébés*/
 .image_cours {
-    width: 20%;
+    width: 15%;
     justify-content: center;
     align-content: center;
 }
@@ -537,7 +537,7 @@ tableau dans le footer en 3 colonnes:
     padding: 20px;
 }
 
-/*ligen du bouton d'inscription*/
+/*ligne du bouton d'inscription*/
 .inscrire {
     width: 300px;
     padding: 10px;
@@ -570,4 +570,26 @@ tableau dans le footer en 3 colonnes:
     background-image: url(./images/cours_enfants.jpg);
     background-size: cover;
     align-content: center;
+}
+
+/*Réutilisation des mêmes paramètres pour:
+     - le titre du cours sur l'image
+     - le texte des règles
+     - le tableau de présentation des cours
+     - le bouton vers la page d'inscription
+*/
+
+/*Ajout d'une image de fond ressemblant à des lignes d'eau pour les principes d'apprentissage*/
+.apprentissages {
+    background-image: url(./images/une_ligne_d_eau.png);
+    background-size: 100% 125px;
+    height:125px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.apprentissages p {
+    margin-left: 100px;
+    font-weight: bold;
 }
