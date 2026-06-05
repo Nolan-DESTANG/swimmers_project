@@ -13,7 +13,7 @@ h2 {
 p {
     font-size: 20px;
 }
-/*------------------------------STYLE DE LA PAGE D'ACCUEIL------------------------------*/
+/*------------------------------PAGE D'ACCUEIL------------------------------*/
 
 /*------------------------------Bannière et barre de navigation------------------------------*/
 .banner {
@@ -138,6 +138,7 @@ p {
     border: 1px solid darkblue;
 }
 
+
 /*------------------------------bouton de retour en haut de page------------------------------*/
 .back_to_top {
     position: fixed;
@@ -166,7 +167,8 @@ p {
     opacity: 1;
 }
 
-/*--------------------------------cours proposés------------------------------*/
+
+/*--------------------------------présentation du club------------------------------*/
 
 /*texte de présentation du club*/
 .presentation {
@@ -174,7 +176,8 @@ p {
     padding: 20px;
 }
 
-/*sections de présentation pour tous les cours proposés: bébés, enfants et adultes*/
+
+/*------------------------------présentation des cours proposés: bébés, enfants, adultes------------------------------*/
 
 /*conteneur du tableau de présentation des cours*/
 .presentation_sections {
@@ -201,14 +204,14 @@ p {
 .presentation_sections img {
     display: flex;
     width: auto;
-    height: 225px;
+    height: 210px;
     border-radius: 15px;
     transition: all 0.3s linear;
     cursor: pointer;
 }
 
 .presentation_sections img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
@@ -246,7 +249,6 @@ p {
     cursor: pointer;
     transition: all 0.5s linear;
     opacity: 0;
-    
 }
 
 .plus_infos:hover {
@@ -255,7 +257,8 @@ p {
     border: 1px solid darkblue;
 }
 
-/*section présentation de l'équipe*/
+
+/*------------------------------présentation de l'équipe------------------------------*/
 
 /*conteneur principal*/
 .equipe {
@@ -297,11 +300,10 @@ p {
     top: -20px;
 }
 
-/*bouton "plus d'informations" = ".plus_infos a" mais constamment visible*/
+/*bouton "plus_infos_equipe" = ".plus_infos" mais constamment visible*/
 .plus_infos_equipe {
-    width: 200px;
+    width: 300px;
     padding: 10px;
-    margin-bottom: 20px;
     border-radius: 15px;
     text-decoration: none;
     color: white;
@@ -320,6 +322,8 @@ p {
     color: darkblue;
     border: 1px solid darkblue;
 }
+
+
 
 /*------------------------------partenaires------------------------------*/
 .partenaires {
@@ -348,6 +352,8 @@ p {
     height: 100px;
     border-radius: 15px;
 }
+
+
 
 /*------------------------------footer------------------------------*/
 footer {
@@ -487,13 +493,13 @@ tableau dans le footer en 3 colonnes:
 
 
 
-    /*------------------------------STYLE DE LA PAGE DES BEBES NAGEURS------------------------------*/
+/*------------------------------PAGE DES BEBES NAGEURS------------------------------*/
 
 /*image de bébés nageurs avec le nom du cours dessus*/
 .titre_cours_bebes {
     width: 100%;
     height: 600px;
-    background-image: url(./images/page_bebes_nageurs.jpg);
+    background-image: url(./images/cours_bebes_nageurs.jpg);
     background-size: cover;
     align-content: center;
 }
@@ -552,7 +558,11 @@ tableau dans le footer en 3 colonnes:
     border: 1px solid darkblue;
 }
 
-    /*------------------------------STYLE DE LA PAGE DES COURS ENFANTS------------------------------*/
+
+
+
+
+/*------------------------------PAGE DES COURS ENFANTS------------------------------*/
 
 /*image de bébés nageurs avec le nom du cours dessus*/
 .titre_cours_enfants {
@@ -585,7 +595,11 @@ tableau dans le footer en 3 colonnes:
     font-weight: bold;
 }
 
-    /*------------------------------STYLE DE LA PAGE DES COURS ADULTES------------------------------*/
+
+
+
+
+/*------------------------------PAGE DES COURS ADULTES------------------------------*/
 /*image de bébés nageurs avec le nom du cours dessus*/
 .titre_cours_adultes {
     width: 100%;
@@ -601,3 +615,17 @@ tableau dans le footer en 3 colonnes:
      - le tableau de présentation des cours
      - le bouton vers la page d'inscription
 */
+
+
+
+
+/*------------------------------PAGE D'INSCRIPTION------------------------------*/
+
+/*image de bébés nageurs avec le nom du cours dessus*/
+.titre_inscription {
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/plongeon_page_inscription.jpg);
+    background-size: cover;
+    align-content: center;
+}
