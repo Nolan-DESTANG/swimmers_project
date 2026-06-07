@@ -93,7 +93,7 @@
                             </td>
                             <td>
                                 <label for="age">Date de naissance*</label> <br>
-                                <input type="date" id="date_de_naissance" name="date de naissance" required min="01-01-1900" placeholder="Date de naissance du participant">
+                                <input type="date" id="date_de_naissance" name="date de naissance" min="01-01-1900" placeholder="Date de naissance du participant">
                             </td>
                         </tr>
                         <tr class="tuteur"> <!--ligne du tuteur-->
@@ -107,7 +107,7 @@
                             </td>
                             <td>
                                 <label for="age">Date de naissance*</label> <br>
-                                <input type="date" id="date_de_naissance" name="date de naissance" required min="01-01-1900">
+                                <input type="date" id="date_de_naissance" name="date de naissance" min="01-01-1900">
                             </td>
                         </tr>
                     </table>
@@ -168,15 +168,108 @@
             <br>
             <img class="emploi_du_temps" src="./ressources/images/emploi_du_temps_des_cours.png" alt="Emploi du temps des Cours">
         </div>
+
+        <br>
+
+        <h1 class="formulaire">Choix du cours</h1>
+
+        <table class="inscription_in">
+            <tr> <!--ligne du choix du cours et du niveau souhaité-->
+                <td id="groupe"> <!--choix du cours-->
+                    <label for="choix_du_cours">Selectionnez le cours que vous souhaitez</label> <br>
+                    <select name="choix_du_cours" id="choix_du_cours" required>
+                        <option value="bebes_nageurs" id="bebes_nageurs">Bébés nageurs</option>
+                        <option value="cours_enfants" id="cours_enfants">Cours enfants</option>
+                        <option value="cours_adultes" id="cours_adultes">Cours adultes</option>
+                    </select>
+                </td>
+                <td id="niveau"> <!--choix du niveau en fonction du choix précédent-->
+                    <label for="choix_du_niveau" id="choix_du_niveau">Selectionnez le niveau que vous souhaitez</label> <br>
+                    <select name="niveaux_bebes_nageurs" id="niveaux_bebes_nageurs" required>
+                        <option value="BB_6-12" id="bb_6_12">Bébés nageurs 6-12 mois</option>
+                        <option value="BB_1-2" id="bb_1_2">Bébés nageurs 1-2 ans</option>
+                        <option value="BB_2-3" id="bb_2_3">Bébés nageurs 2-3 ans</option>
+                        <option value="BB_3-4" id="bb_3_4">Bébé nageurs 3-4 ans</option>
+                    </select>
+                    <select name="niveaux_cours_enfants" id="niveaux_cours_enfants" required>
+                        <option value="Niveau_coquillage" id="Niveau_coquillage">Niveau coquillage</option>
+                        <option value="Niveau_etoile_de_mer" id="Niveau_etoile_de_mer">Niveau étoile de mer</option>
+                        <option value="Niveau_crabe" id="Niveau_crabe">Niveau crabe</option>
+                        <option value="Niveau_poisson_clown" id="Niveau_poisson_clown">Niveau poisson clown</option>
+                        <option value="Niveau_pieuvre" id="Niveau_pieuvre">Niveau pieuvre</option>
+                        <option value="Niveau_dauphin" id="Niveau_dauphin">Niveau dauphin</option>
+                        <option value="Niveau_requin" id="Niveau_requin">Niveau requin</option>
+                        <option value="Niveau_espadon" id="Niveau_espadon">Niveau espadon</option>
+                    </select>
+                    <select name="niveaux_cours_adultes" id="niveaux_cours_adultes" required>
+                        <option value="cours_aquaphobie" id="cours_aquaphobie">Cours d'aquaphobie</option>
+                        <option value="cours_apprentissage" id="cours_apprentissage">Cours d'apprentissage</option>
+                        <option value="cours_perfectionnement" id="cours_perfectionnement">Cours de perfectionnnement</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="creneau"> <!--ligne du choix du créneau-->
+                <td> <!--choix du jour-->
+                    <label for="choix_du_jour" id="choix_du_jour">Selectionnez le jour que vous souhaitez</label> <br>
+                    <select name="choix_jour" id="choix_jour" required>
+                        <option value="lundi" id="lundi">Lundi</option>
+                        <option value="mardi" id="mardi">Mardi</option>
+                        <option value="mercredi" id="mercredi">Mercredi</option>
+                        <option value="jeudi" id="jeudi">Jeudi</option>
+                        <option value="vendredi" id="vendredi">Vendredi</option>
+                        <option value="samedi" id="samedi">Samedi</option>
+                    </select>
+                </td>
+                <td id="horaire"> <!--choix de l'heure en fonction du cours et jour choisis-->
+                    <label for="choix_horaire" id="choix_horaire">Selectionnez l'horaire que vous souhaitez</label> <br>
+                    <select name="choix_de_l_heure" id="choix_de_l_heure" required>
+                        <optgroup label="Matin" id="matin">
+                            <option value="9h00" id="9_00">09:00</option>
+                            <option value="9h30" id="9_30">09:30</option>
+                            <option value="10h00" id="10_00">10:00</option>
+                            <option value="10h30" id="10_30">10:30</option>
+                            <option value="11h00" id="11_00">11:00</option>
+                            <option value="11h30" id="11_30">11:30</option>
+                        </optgroup>
+                        <optgroup label="Midi" id="midi">
+                            <option value="12h00" id="12_00">12:00</option>
+                            <option value="12h45" id="12_45">12:45</option>
+                            <option value="13h00" id="13_00">13:00</option>
+                        </optgroup>
+                        <optgroup label="Après-midi" id="apres_midi">
+                            <option value="13h30" id="13_30">13:30</option>
+                            <option value="14h15" id="14_15">14:15</option>
+                            <option value="15h00" id="15_00">15:00</option>
+                            <option value="15h45" id="15_45">15:45</option>
+                            <option value="16h30" id="16_30">16:30</option>
+                            <option value="17h00" id="17_00">17:00</option>
+                            <option value="17h15" id="17_15">17:15</option>
+                            <option value="17h30" id="17_30">17:30</option>
+                            <option value="17h45" id="17_45">17:45</option>
+                        </optgroup>
+                        <optgroup label="Soir" id="soir">
+                            <option value="18h00" id="18_00">18:00</option>
+                            <option value="18h15" id="18_15">18:15</option>
+                            <option value="18h30" id="18_30">18:30</option>
+                            <option value="18h45" id="18_45">18:45</option>
+                            <option value="19h00" id="19_00">19:00</option>
+                            <option value="19h15" id="19_15">19:15</option>
+                            <option value="19h30" id="19_30">19:30</option>
+                            <option value="19h45" id="19_45">19:45</option>
+                            <option value="20h00" id="20_00">20:00</option>
+                            <option value="20h15" id="20_15">20:15</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <br>
+
+        <button type="submit" id="bouton_de_confirmation">Confirmer mon inscription</button>
+
     </div>  
-
-
-       <!-- <label for="cours_souhaité">Cours souhaité</label>
-        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">-->
-
-
-    
-
+ 
     <br>
     <br>
     <br>

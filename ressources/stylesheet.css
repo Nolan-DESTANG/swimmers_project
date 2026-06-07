@@ -1,4 +1,4 @@
-* {
+/* {
     border: 1px solid black;
 }*/
 
@@ -685,7 +685,7 @@ label {
 
 
 /*champs à remplir et selecteur*/
-input[type=text],[type=date], select {
+input[type=text],[type=date] {
     width: 300px;
     height: 30px;
     border-radius: 5px;
@@ -698,9 +698,44 @@ input[type=text],[type=date], select {
     outline: none;
 }
 
+/*ligne des informations pour le tuteur*/
 /*.tuteur {
     display: none;
     transition: all 0.5s linear;
+}*/
+
+/*div de selection du cours caché jusqu'au clic sur le bouton "passer à la selection du cours"*/
+.selection_du_cours {
+    display: none;
+    transition:all 05s linear; 
+}
+
+select {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid darkblue;
+    background: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+#matin, #midi, #apres_midi, #soir{
+    background-color: darkblue;
+    color: white;
+}
+
+option {
+    background-color: lightgray;
+    color: black;
+}
+
+/*placement des selecteurs de niveaux au même endroit*/
+/*#niveaux_bebes_nageurs, #niveaux_cours_enfants, #niveaux_cours_adultes, #niveau, #creneau, #bouton_de_confirmation {
+    display: none;
 }*/
 
 /*bouton de confirmation similaire aux autres boutons du site*/
@@ -728,8 +763,3 @@ button:hover {
     border: 1px solid darkblue;
 }
 
-/*div de selection du cours caché jusqu'au clic sur le bouton "passer à la selection du cours"*/
-.selection_du_cours {
-    display: none;
-    transition:all 05s linear; 
-}
