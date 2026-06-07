@@ -25,3 +25,20 @@ function afficherDescriptionCours(index) {
         boutonsPlusInfos[index].style.opacity = 1;
     }, delayAffichageBouton);
 };
+
+
+
+
+//------------------------------PAGE INSCRIPTION------------------------------
+
+//le formulaire de selection du cours s'affiche au clic sur le bouton "passer à la selection du cours"
+const boutonSelectionCours = document.getElementsByTagName('button');
+const divSelectionCours = document.getElementsByClassName('selection_du_cours');
+
+boutonSelectionCours(inscription) ; {
+    button.addEventListener('click', () => afficherFormulaireSelectionCours);
+};
+
+function afficherFormulaireSelectionCours(inscription) {
+    divSelectionCours[inscription].style.display = block;
+};

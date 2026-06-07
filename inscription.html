@@ -70,16 +70,112 @@
     <!--court texte avec lien vers le pdf de l'emploi du temps + image de l'emploi du temps dessous-->
     <div class="texte_regles">
         <p>Nous sommes ravis de savoir que vous souhaitez vous inscrire dans notre club! <br>
-        Avant de choisir, prenez le temps de regarder les horaires disponibles pour le cours sur lequel vous souhaitez vous inscrire. <br>
-        <br>
-        <small>Téléchargez notre emploi du temps en cliquant</small> <a href="./ressources/emploi_du_temps_des_cours.pdf">ici</a>. </p>
-
-        <br>
-
-        <img class="emploi_du_temps" src="./ressources/images/emploi_du_temps_des_cours.png" alt="Emploi du temps des Cours">
+        Avant de choisir votre cours, merci de renseigner les informations demandées ci-dessous. <br>
     </div>
 
+    <br>
+
     <!--Formulaire d'inscription-->
+    <h1 class="formulaire">Informations personnelles</h1>
+    <form>
+        <table class="inscription">
+            <tr> <!--tableau d'informations générales sur le participant-->
+                <td>
+                    <table class="inscription_in"> 
+                        <tr> <!--ligne du participant-->
+                            <td>
+                                <label for="prénom_participant">Prénom du participant*</label> <br>
+                                <input type="text" id="prenom_participant" name="prenom" placeholder="Prénom du participant">
+                            </td>
+                            <td>
+                                <label for="prénom_participant">Nom du participant*</label> <br>
+                                <input type="text" id="nom_participant" name="prenom" placeholder="Nom du participant">
+                            </td>
+                            <td>
+                                <label for="age">Date de naissance*</label> <br>
+                                <input type="date" id="date_de_naissance" name="date de naissance" required min="01-01-1900" placeholder="Date de naissance du participant">
+                            </td>
+                        </tr>
+                        <tr class="tuteur"> <!--ligne du tuteur-->
+                            <td>
+                                <label for="prénom_tuteur">Prénom du tuteur*</label> <br>
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom du tuteur">
+                            </td>
+                            <td>
+                                <label for="nom_tuteur">Nom du tuteur*</label> <br>
+                                <input type="text" id="nom" name="nom" placeholder="Nom du tuteur">
+                            </td>
+                            <td>
+                                <label for="age">Date de naissance*</label> <br>
+                                <input type="date" id="date_de_naissance" name="date de naissance" required min="01-01-1900">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr> <!--ligne de l'adresse postale-->
+                <td>
+                    <table class="inscription_in">
+                        <tr>
+                            <td>
+                                <label for="adresse">Adresse postale</label> <br>
+                                <input type="text" id="numéro et rue" name="numero_et_rue" placeholder="Votre numéro et nom de rue">
+                            </td>
+                            <td>
+                                <input type="text" id="ville" name="ville" placeholder="Votre ville">
+                            </td>
+                            <td>
+                                <input type="text" id="code_postal" name="code_postal" placeholder="Votre code postal">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="inscription_in">
+                        <tr> <!--ligne pour téléphone et adresse mail-->
+                            <td>
+                                <label for="mail">Adresse mail*</label> <br>
+                                <input type="text" id="mail" name="mail" placeholder="Votre adresse mail">
+                            </td>
+                            <td>
+                                <label for="téléphone">Téléphone*</label> <br>
+                                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <button>Passer à la selection du cours</button>
+    </form>
+
+    <br>
+    <br>
+
+    <div class="selection_du_cours">
+        <div class="texte_regles">
+            <p> Merci pour ses informations!<br>
+                Avant de passer à la suite, prenez le temps de choisir un horaire pour le cours dans lequel vous souhaitez vous inscrire. <br>
+                <br>
+                <small>Regardez notre emploi du temps des cours ci-dessous ou téléchargez-le en cliquant</small> <a href="./ressources/emploi_du_temps_des_cours.pdf" target="_blank">ici</a>. 
+            </p>
+            <br>
+            <img class="emploi_du_temps" src="./ressources/images/emploi_du_temps_des_cours.png" alt="Emploi du temps des Cours">
+        </div>
+    </div>  
+
+
+       <!-- <label for="cours_souhaité">Cours souhaité</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">-->
+
+
+    
 
     <br>
     <br>

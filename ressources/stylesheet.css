@@ -643,8 +643,93 @@ tableau dans le footer en 3 colonnes:
 
 /*Réutilisation des mêmes paramètres pour le titre du cours sur l'image*/
 
-/*Texte avec l'image de l'emploi du temps*/
+/*image de l'emploi du temps*/
 .emploi_du_temps {
     width: 90%;
 }
+
+/*------------------------------formulaire d'inscription------------------------------*/
+
+/*titre*/
+.formulaire {
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+/*taille général des formulaires*/
+form {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*tableau*/
+.inscription {
+    width: 100%;
+}
+
+.inscription_in {
+    width: 100%;
+}
+.inscription_in td {
+    padding: 20px 10px;
+}
+
 /*style des étiquettes*/
+label {
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+/*champs à remplir et selecteur*/
+input[type=text],[type=date], select {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid darkblue;
+    background: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+/*.tuteur {
+    display: none;
+    transition: all 0.5s linear;
+}*/
+
+/*bouton de confirmation similaire aux autres boutons du site*/
+button {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    background-color: darkblue;
+    border: 1px solid transparent;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+button:hover {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+}
+
+/*div de selection du cours caché jusqu'au clic sur le bouton "passer à la selection du cours"*/
+/*.selection_du_cours {
+    display: none;
+    transition:all 05s linear; 
+}*/
