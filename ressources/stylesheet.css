@@ -723,7 +723,8 @@ select {
     outline: none;
 }
 
-#matin, #midi, #apres_midi, #soir{
+/*optgroup avec fond bleu et écriture blanche*/
+#matin, #midi, #apres_midi, #soir, #niveaux_bebes_nageurs, #niveaux_cours_enfants, #niveaux_cours_adultes{
     background-color: darkblue;
     color: white;
 }

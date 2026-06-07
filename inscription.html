@@ -185,26 +185,28 @@
                 </td>
                 <td id="niveau"> <!--choix du niveau en fonction du choix précédent-->
                     <label for="choix_du_niveau" id="choix_du_niveau">Selectionnez le niveau que vous souhaitez</label> <br>
-                    <select name="niveaux_bebes_nageurs" id="niveaux_bebes_nageurs" required>
-                        <option value="BB_6-12" id="bb_6_12">Bébés nageurs 6-12 mois</option>
-                        <option value="BB_1-2" id="bb_1_2">Bébés nageurs 1-2 ans</option>
-                        <option value="BB_2-3" id="bb_2_3">Bébés nageurs 2-3 ans</option>
-                        <option value="BB_3-4" id="bb_3_4">Bébé nageurs 3-4 ans</option>
-                    </select>
-                    <select name="niveaux_cours_enfants" id="niveaux_cours_enfants" required>
-                        <option value="Niveau_coquillage" id="Niveau_coquillage">Niveau coquillage</option>
-                        <option value="Niveau_etoile_de_mer" id="Niveau_etoile_de_mer">Niveau étoile de mer</option>
-                        <option value="Niveau_crabe" id="Niveau_crabe">Niveau crabe</option>
-                        <option value="Niveau_poisson_clown" id="Niveau_poisson_clown">Niveau poisson clown</option>
-                        <option value="Niveau_pieuvre" id="Niveau_pieuvre">Niveau pieuvre</option>
-                        <option value="Niveau_dauphin" id="Niveau_dauphin">Niveau dauphin</option>
-                        <option value="Niveau_requin" id="Niveau_requin">Niveau requin</option>
-                        <option value="Niveau_espadon" id="Niveau_espadon">Niveau espadon</option>
-                    </select>
-                    <select name="niveaux_cours_adultes" id="niveaux_cours_adultes" required>
-                        <option value="cours_aquaphobie" id="cours_aquaphobie">Cours d'aquaphobie</option>
-                        <option value="cours_apprentissage" id="cours_apprentissage">Cours d'apprentissage</option>
-                        <option value="cours_perfectionnement" id="cours_perfectionnement">Cours de perfectionnnement</option>
+                    <select name="selection_niveau" id="selection_niveau">
+                        <optgroup label="Ages des cours bébés nageurs" id="niveaux_bebes_nageurs" required>
+                            <option value="BB_6-12" id="bb_6_12">Bébés nageurs 6-12 mois</option>
+                            <option value="BB_1-2" id="bb_1_2">Bébés nageurs 1-2 ans</option>
+                            <option value="BB_2-3" id="bb_2_3">Bébés nageurs 2-3 ans</option>
+                            <option value="BB_3-4" id="bb_3_4">Bébé nageurs 3-4 ans</option>
+                        </optgroup>
+                        <optgroup label="niveaux des cours enfants" id="niveaux_cours_enfants" required>
+                            <option value="Niveau_coquillage" id="Niveau_coquillage">Niveau coquillage</option>
+                            <option value="Niveau_etoile_de_mer" id="Niveau_etoile_de_mer">Niveau étoile de mer</option>
+                            <option value="Niveau_crabe" id="Niveau_crabe">Niveau crabe</option>
+                            <option value="Niveau_poisson_clown" id="Niveau_poisson_clown">Niveau poisson clown</option>
+                            <option value="Niveau_pieuvre" id="Niveau_pieuvre">Niveau pieuvre</option>
+                            <option value="Niveau_dauphin" id="Niveau_dauphin">Niveau dauphin</option>
+                            <option value="Niveau_requin" id="Niveau_requin">Niveau requin</option>
+                            <option value="Niveau_espadon" id="Niveau_espadon">Niveau espadon</option>
+                        </optgroup>
+                        <optgroup label="niveaux des cours adultes" id="niveaux_cours_adultes" required>
+                            <option value="cours_aquaphobie" id="cours_aquaphobie">Cours d'aquaphobie</option>
+                            <option value="cours_apprentissage" id="cours_apprentissage">Cours d'apprentissage</option>
+                            <option value="cours_perfectionnement" id="cours_perfectionnement">Cours de perfectionnnement</option>
+                        </optgroup>
                     </select>
                 </td>
             </tr>

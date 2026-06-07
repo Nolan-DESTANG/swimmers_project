@@ -63,6 +63,7 @@ function afficherFormulaireSelectionCours() {
 
     //les niveaux bébés
     const choixDuNiveau = document.getElementById('choix_du_niveau');
+    const selectionNiveau = document.getElementById('selection_niveau')
 
     const niveauxBebesNageurs = document.getElementById('niveaux_bebes_nageurs');
     const bebes6A12Mois = document.getElementById('bb_6_12');
