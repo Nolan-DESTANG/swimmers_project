@@ -31,6 +31,9 @@ function afficherDescriptionCours(index) {
 
 //------------------------------PAGE INSCRIPTION------------------------------
 
+//dans le tableau d'informations personnelles, la ligne du tuteur s'affiche uniquement si l'âge du participant est inférieur à 18 ans
+
+
 //le formulaire de selection du cours s'affiche au clic sur le bouton "passer à la selection du cours"
 const boutonSelectionCours = document.getElementById('bouton_selection_cours');
 const divSelectionCours = document.getElementById('selection_du_cours');
@@ -40,9 +43,5 @@ if (boutonSelectionCours && divSelectionCours) {
 }
 
 function afficherFormulaireSelectionCours() {
-    if (divSelectionCours.style.display === 'none' || divSelectionCours.style.display === '') {
-        divSelectionCours.style.display = 'block';
-    } else {
-        divSelectionCours.style.display = 'none';
-    }
+    divSelectionCours.style.display = 'block';
 };
