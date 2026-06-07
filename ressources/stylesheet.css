@@ -1,4 +1,4 @@
-/* {
+* {
     border: 1px solid black;
 }*/
 
@@ -729,7 +729,7 @@ button:hover {
 }
 
 /*div de selection du cours caché jusqu'au clic sur le bouton "passer à la selection du cours"*/
-/*.selection_du_cours {
+.selection_du_cours {
     display: none;
     transition:all 05s linear; 
-}*/
+}

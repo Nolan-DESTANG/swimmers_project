@@ -32,13 +32,17 @@ function afficherDescriptionCours(index) {
 //------------------------------PAGE INSCRIPTION------------------------------
 
 //le formulaire de selection du cours s'affiche au clic sur le bouton "passer à la selection du cours"
-const boutonSelectionCours = document.getElementsByTagName('button');
-const divSelectionCours = document.getElementsByClassName('selection_du_cours');
+const boutonSelectionCours = document.getElementById('bouton_selection_cours');
+const divSelectionCours = document.getElementById('selection_du_cours');
 
-boutonSelectionCours(inscription) ; {
-    button.addEventListener('click', () => afficherFormulaireSelectionCours);
-};
+if (boutonSelectionCours && divSelectionCours) {
+    boutonSelectionCours.addEventListener('click', () => afficherFormulaireSelectionCours());
+}
 
-function afficherFormulaireSelectionCours(inscription) {
-    divSelectionCours[inscription].style.display = block;
+function afficherFormulaireSelectionCours() {
+    if (divSelectionCours.style.display === 'none' || divSelectionCours.style.display === '') {
+        divSelectionCours.style.display = 'block';
+    } else {
+        divSelectionCours.style.display = 'none';
+    }
 };
