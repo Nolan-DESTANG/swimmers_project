@@ -15,6 +15,15 @@ p {
     font-size: 20px;
     font-family: sans-serif;
 }
+
+
+
+
+
+
+
+
+
 /*------------------------------PAGE D'ACCUEIL------------------------------*/
 
 /*------------------------------Bannière et barre de navigation------------------------------*/
@@ -502,7 +511,12 @@ tableau dans le footer en 3 colonnes:
 
 
 
-/*------------------------------PAGE DES BEBES NAGEURS------------------------------*/
+
+
+
+
+
+    /*------------------------------PAGE DES BEBES NAGEURS------------------------------*/
 
 /*image de bébés nageurs avec le nom du cours dessus*/
 .titre_cours_bebes {
@@ -573,6 +587,11 @@ tableau dans le footer en 3 colonnes:
 
 
 
+
+
+
+
+
 /*------------------------------PAGE DES COURS ENFANTS------------------------------*/
 
 /*image de bébés nageurs avec le nom du cours dessus*/
@@ -610,6 +629,11 @@ tableau dans le footer en 3 colonnes:
 
 
 
+
+
+
+
+
 /*------------------------------PAGE DES COURS ADULTES------------------------------*/
 /*image de bébés nageurs avec le nom du cours dessus*/
 .titre_cours_adultes {
@@ -626,6 +650,11 @@ tableau dans le footer en 3 colonnes:
      - le tableau de présentation des cours
      - le bouton vers la page d'inscription
 */
+
+
+
+
+
 
 
 
@@ -685,7 +714,7 @@ label {
 
 
 /*champs à remplir et selecteur*/
-input[type=text],[type=date] {
+input[type=text],[type=date], [type=email], [type=number] {
     width: 300px;
     height: 30px;
     border-radius: 5px;
@@ -724,7 +753,8 @@ select {
 }
 
 /*optgroup avec fond bleu et écriture blanche*/
-#matin, #midi, #apres_midi, #soir, #niveaux_bebes_nageurs, #niveaux_cours_enfants, #niveaux_cours_adultes{
+#matin, #midi, #apres_midi, #soir, 
+#niveaux_bebes_nageurs, #niveaux_cours_enfants, #niveaux_cours_adultes {
     background-color: darkblue;
     color: white;
 }
@@ -755,7 +785,7 @@ button {
     justify-content: center;
     display: block;
     cursor: pointer;
-    transition: all 0.5s linear;
+    transition:  all 0.5s linear;
 }
 
 button:hover {
@@ -764,3 +794,64 @@ button:hover {
     border: 1px solid darkblue;
 }
 
+
+
+
+
+
+
+
+
+/*------------------------------PAGE DE CONTACT------------------------------*/
+/*image de bébés nageurs avec le nom du cours dessus*/
+.titre_contact {
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/equipe_complete.png);
+    background-size: cover;
+    align-content: center;
+}
+
+.titre_cours_contact {
+    text-align: center;
+    font-size: 100px;
+    font-family: sans-serif;
+    color: white;
+}
+
+/*Réutilisation des mêmes paramètres pour:
+     - le formulaire de contact
+*/
+
+textarea {
+    width: 80%;
+    height: 200px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid darkblue;
+    background: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.lien_contact {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.lien_contact:hover {
+    text-decoration: underline;
+}
+
+.maps_frame {
+    text-align: center;
+}
+
+iframe {
+    width: 90%;
+    height: 300px;
+    border: none;
+    border-radius: 15px;
+}
