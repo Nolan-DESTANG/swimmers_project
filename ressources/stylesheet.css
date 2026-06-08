@@ -1,4 +1,4 @@
-* {
+/* {
     border: 1px solid black;
 }*/
 
@@ -855,3 +855,31 @@ iframe {
     border: none;
     border-radius: 15px;
 }
+
+
+
+
+
+
+
+
+
+/*------------------------------PAGE NOTRE EQUIPE------------------------------*/
+/*reprise du code utilisé pour la page bébés nageurs:
+.image_cours {
+    width: 15%;
+    justify-content: center;
+    align-content: center;
+}
+
+.image_cours img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.description_cours {
+    width: 80%;
+    height: auto;
+    align-items: center;
+    padding: 0 0 0 20px;
+}*/
