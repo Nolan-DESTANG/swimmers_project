@@ -1,4 +1,4 @@
-* {
+/* {
     border: 1px solid black;
 }*/
 
@@ -670,7 +670,7 @@ tableau dans le footer en 3 colonnes:
     align-content: center;
 }
 
-/*Réutilisation des mêmes paramètres pour le titre du cours sur l'image*/
+/*Réutilisation des mêmes paramètres que pour le titre du cours sur l'image*/
 
 /*image de l'emploi du temps*/
 .emploi_du_temps {
