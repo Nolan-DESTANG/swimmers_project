@@ -8,7 +8,7 @@
     <script src="./ressources/script.js" type="text/javascript" defer></script>
 
     <link rel="icon" href="./ressources/images/logo.jfif" />
-    <title>Swimmers | Contact</title>
+    <title>Swimmers | Notre équipe</title>
 </head>
 
 <body>
@@ -55,104 +55,61 @@
         </div>
     </div>
 
+    <br>
+
     <a href="#top" class="back_to_top">↑</a>
     <!--bouton de retour en haut de page-->
 
-    <!--image d'un adulte avec le titre du cours-->
-    <div class="titre_contact">
-        <h1 class="titre_cours_contact">
-            Nous contacter
+    <!--image de la piscine avec le titre du cours-->
+    <div class="image_de_fond_notre_histoire">
+        <h1 class="titre_notre_histoire">
+            Notre histoire
         </h1>
     </div>
 
-    <!--section d'accueil avec une image de fond et un message de bienvenue-->
-    <div class="presentation">
-        <p> Vous avez une question, vous souhaitez une information ou faire une demande particulière? N'hésitez pas à nous écrire via ce formulaire ou bien nous contacter directement par téléphone!</p>
+    <div class="div_notre_histoire">
+        <h2>D'une passion un projet</h2>
+
+        <p> L'aventure Swimmers a commencé en 1990, portée par la passion et l'amitié de Marc et Philippe, 
+            deux anciens nageurs passionnés et plongeurs expérimentés. Amoureux du milieu aquatique depuis leur plus jeune 
+            âge, ils partageaient une même conviction : l'eau doit être accessible à tous, quels que soient l'âge, 
+            le niveau ou les appréhensions de chacun. <br>
+            <br>
+            Animés par cette vision, ils ont créé le club Swimmers avec l'ambition d'offrir un enseignement de qualité 
+            dans une ambiance chaleureuse et bienveillante. Dès les premières années, le club proposait des cours pour 
+            enfants et adultes, mais s'est rapidement spécialisé dans l'accompagnement des personnes souffrant 
+            d'aquaphobie. Grâce à une pédagogie basée sur la confiance, l'écoute et le respect du rythme de chacun, 
+            de nombreux élèves ont pu découvrir ou redécouvrir le plaisir d'évoluer dans l'eau.
+        </p>
+
+        <h2>Une évolution grandissante</h2>
+
+        <p>Face au succès grandissant du club et à l'augmentation constante du nombre d'adhérents, Marc et Philippe ont 
+            pris une décision importante au début des années 2000 : agrandir leur équipe. Ils ont alors recruté plusieurs 
+            moniteurs et éducateurs partageant les mêmes valeurs humaines et la même passion pour les activités aquatiques. 
+            Cette équipe soudée a permis au club de développer de nouveaux cours et d'accueillir un public toujours plus 
+            varié. <br>
+            <br>
+            Au fil des années, Swimmers est devenu une véritable référence locale dans l'apprentissage et le 
+            perfectionnement de la natation. Aujourd'hui, le club rassemble plus de 500 membres, des bébés nageurs aux 
+            adultes confirmés, en passant par les enfants, les adolescents et les personnes souhaitant vaincre leur peur 
+            de l'eau. Cette diversité fait la richesse de notre communauté et témoigne de l'esprit d'ouverture qui anime 
+            le club depuis sa création.
+        </p>
+
+        <h2>Une vision de l'avenir </h2>
+
+        <p>L'histoire de Swimmers continue de s'écrire chaque jour. Dans un avenir proche, le club souhaite franchir une 
+            nouvelle étape en développant une section compétition pour les enfants et les adultes. Encadrés par des 
+            entraîneurs qualifiés et expérimentés, les nageurs qui le souhaitent pourront ainsi se préparer aux 
+            compétitions tout en conservant les valeurs qui font l'identité du club : le plaisir, le dépassement de soi 
+            et l'esprit d'équipe. <br>
+            <br>
+            Depuis plus de trente ans, Swimmers accompagne ses adhérents dans leur progression, leurs réussites et leur 
+            confiance dans l'eau. Une aventure humaine qui ne fait que commencer.
+        </p>
     </div>
 
-    <h1 class="formulaire">Formulaire de contact</h1>
-
-    <form> <!--formulaire de contact du club-->
-        <table class="inscription_in">
-            <tr> <!--ligne prénom et nom-->
-                <td> 
-                    <label for="prénom"> Prénom*</label> <br>
-                    <input required type="text" name="prénom" placeholder="Votre prénom">
-                </td>
-                <td>
-                    <label for="nom"> Nom*</label> <br>
-                    <input required type="text" name="nom" placeholder="Votre nom de famille">
-                </td>
-            </tr>
-            <tr> <!--ligne adresse mail et numéro de téléphone-->
-                <td>
-                    <label for="email"> Adresse mail*</label> <br>
-                    <input required type="email" name="email" placeholder="Votre adresse mail">
-                </td>
-                <td>
-                    <label for="telephone"> Numéro de téléphone*</label> <br>
-                    <input required type="number" name="telephone" placeholder="Votre numéro de téléphone">
-                </td>
-            </tr>
-        </table>
-        <table class="inscription">
-            <tr> <!--zone de message-->
-                <td>
-                    <label for="Message"> Message* </label> <br>
-                    <textarea required placeholder="Votre message..."></textarea>
-                </td>
-            </tr>
-            <tr> <!--question pour savoir si la personne est inscrite au club-->
-                <td>
-                    <label for="inscrit">Etes-vous inscrit au club?*</label> <br>
-                    <select name="oui_non" id="oui_non">
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-    </form>
-
-    <p class="presentation"> Sinon, vous pouvez toujours nous écrire à <strong> <a class="lien_contact" target="_blank" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fhl%3Dfr&dsh=S-65777534%3A1779703217292134&emr=1&hl=fr&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWa2Pav6-4Mr0OhlB0g4Rt8NfODFJEpQgPGp8qQaNGT2aUhkzZiKN4EEEsVOafKhXFq62kb5EetYqg">
-        club@swimmers.com</a> </strong> ou par téléphone au <strong> <a class="lien_contact" target="_blank" href="https://web.whatsapp.com/">
-        +33644061736</a></strong>. 
-    </p>
-
-    <br>
-
-    <button type="submit" id="bouton_d_envoi">Envoyer</button>
-
-    <br>
-
-    <h1 class="formulaire">Pour nous trouver</h1>
-
-    <table class="inscription">
-        <tr>
-            <td>
-                <h1 class="formulaire">Nos cours</h1>
-            </td>
-            <td>
-                <h1 class="formulaire">Nos bureaux</h1>
-            </td>
-        </tr>
-        <tr>
-            <td class="maps_frame">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.6649993907977!2d6.1332118!3d46.217118799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64dd504c1d4f%3A0x3fdbfd2111fed8a2!2sPiscine%20de%20Chandieu!5e0!3m2!1sfr!2sfr!4v1780915460438!5m2!1sfr!2sfr" 
-                    allowfullscreen="1" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </td>
-            <td class="maps_frame">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22084.069776374203!2d6.0896053!3d46.2202272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c649678a18cad%3A0xf0a4fee07eba2c44!2sAdministration%20locale!5e0!3m2!1sfr!2sfr!4v1780915763763!5m2!1sfr!2sfr" 
-                    allowfullscreen="1" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </td>
-        </tr>
-    </table>
     <br>
     <br>
     <br>

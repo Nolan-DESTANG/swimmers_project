@@ -1,4 +1,4 @@
-/* {
+* {
     border: 1px solid black;
 }*/
 
@@ -803,7 +803,7 @@ button:hover {
 
 
 /*------------------------------PAGE DE CONTACT------------------------------*/
-/*image de bébés nageurs avec le nom du cours dessus*/
+/*image de l'équipe avec le nom de la page dessus*/
 .titre_contact {
     width: 100%;
     height: 600px;
@@ -883,3 +883,40 @@ iframe {
     align-items: center;
     padding: 0 0 0 20px;
 }*/
+
+
+
+
+
+
+
+
+
+/*------------------------------PAGE NOTRE HISTOIRE------------------------------*/
+/*image de fond d'une piscine avec le titre dessus*/
+.image_de_fond_notre_histoire {
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/piscine.png);
+    background-size: cover;
+    align-content: center;
+}
+
+.titre_notre_histoire {
+    text-align: center;
+    font-size: 100px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.div_notre_histoire {
+    padding: 20px;
+}
+
+.div_notre_histoire h2 {
+    text-align: center;
+}
+
+.div_notre_histoire p {
+    text-align: justify;
+}
