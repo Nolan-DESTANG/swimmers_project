@@ -1,0 +1,26 @@
+/*------------------------------CSS POUR TAILLE D'ECRAN EGALE OU INFERIEURE A 500px------------------------------*/
+@media only screen and (max-width: 800px) {
+    /*logo */
+    .logo_container {
+        width: 1%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /*nom du club*/
+    .club_name_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 98%;
+        height: 50%;
+    }
+
+    .empty_column {
+        width: 1%;
+    }
+
+    
+}

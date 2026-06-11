@@ -1,3 +1,5 @@
+//------------------------------PAGE ACCUEIL------------------------------
+
 // animation des images des cours : le texte de la section s'affiche au clic sur chaque image
 // Sélection des éléments du DOM
 const imagesCours = document.querySelectorAll('.presentation_sections img');
