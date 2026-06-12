@@ -1,8 +1,10 @@
 /*------------------------------CSS POUR TAILLE D'ECRAN EGALE OU INFERIEURE A 500px------------------------------*/
 @media only screen and (max-width: 800px) {
+
+    /*------------------------------header------------------------------*/
     /*logo */
     .logo_container {
-        width: 1%;
+        width: 0;
     }
 
     .logo {
@@ -14,13 +16,127 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 98%;
+        width: 100%;
         height: 50%;
     }
 
     .empty_column {
-        width: 1%;
+        width: 0;
     }
 
+    /*------------------------------footer------------------------------*/
+    .footer {
+        width: 100%;
+    }
+
+    .footer tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*colonne 1 => ligne 1 : logo et slogan*/
+    .footer_logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+        .footer_logo img {
+            height: 200px;
+            min-height: 100px;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+        }
+
+        .footer_logo h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+    /*colonne 2 => ligne 2 : contact*/
+    .footer_contact {
+        width: 100%;
+    }
+
+        .contact {
+            width: 100%;
+        }
+
+        .contact_content {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+    /*colonne 3 => ligne 3 : Menu de navigation*/
+    .footer_nav_menu {
+        width: 100%;
+    }
+
+        .footer_nav_menu table {
+            width: 100%;
+        }
+
+        .footer_nav_menu tr {
+            width: 100%;
+            flex-direction: row;
+        }
+
+        .footer_nav_menu p {
+            width: 100%;
+        }
+
+        .footer_nav_menu a {
+            width: 100%;
+        }
+
+        /*bouton d'accueil*/
+        .back_home {
+            display: block;
+        }
+    
+    
+    
+    
+    /*------------------------------PAGE D'ACCUEIL------------------------------*/
+
+    /*------------------------------présentation des cours proposés: bébés, enfants, adultes------------------------------*/
+    .presentation_sections_container tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tableau_cours img {
+        width: 95%;
+        min-width: 300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*------------------------------présentation de l'équipe------------------------------*/
+    .equipe {
+        flex-direction: column;
+    }
+
+    .coach_img {
+        width: 100%;
+        display: flex;
+    }
+
+    .coach_img img {
+        height: 300px;
+        min-height: 300px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .coach_description {
+        width: 100%;
+    }
     
 }

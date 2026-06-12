@@ -32,7 +32,7 @@ p {
 .banner {
     justify-content: space-between;
     width: 100%;
-    height: 150px;
+    height: auto;
     background-color: darkblue;
     border-radius: 0 0 15px 15px;
     z-index: 100;
@@ -41,14 +41,14 @@ p {
 /*logo */
 .logo_container {
     align-items: center;
-    justify-content: left;
-    padding-left: 50px;
+    justify-content: center;
     width: 33%;
+    padding-left: 4%;
 }
 
 .logo {
     width: auto;
-    height: 100px;
+    height: 150px;
     border-radius: 50%;
 }
 
@@ -178,6 +178,34 @@ p {
     opacity: 1;
 }
 
+.back_home {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: darkblue;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+    opacity: 0.5;
+    z-index: 100;
+    display: none;
+}
+
+.back_home:active {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+    opacity: 1;
+}
+
 
 /*--------------------------------présentation du club------------------------------*/
 
@@ -191,29 +219,37 @@ p {
 /*------------------------------présentation des cours proposés: bébés, enfants, adultes------------------------------*/
 
 /*conteneur du tableau de présentation des cours*/
-.presentation_sections {
+.presentation_sections_container {
+    width: 100%;
+    align-items: center;
+}
+
+.presentation_sections_container tr {
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+}
+
+/*tableaux de présentation des cours*/
+.tableau_cours {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-/*style des lignes, cellules et contenus du tableau*/
-.presentation_sections tr {
-    display:flex;
-    justify-content: space-between;;
+.tableau_cours tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableau_cours td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
 }
 
-.presentation_sections td {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 33%;
-}
-
-.presentation_sections img {
+.tableau_cours img {
     display: flex;
     width: auto;
     height: 210px;
@@ -222,33 +258,33 @@ p {
     cursor: pointer;
 }
 
-.presentation_sections img:hover {
+.tableau_cours img:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
 }
 
-.presentation_sections h2 {
+.tableau_cours h2 {
     width: 90%;
     margin: 0 auto 20px;
     text-align: center;
     justify-content: center;
 }
 
-.presentation_sections p {
-    width: 90%;
-    text-align: center;
-    margin: 0 auto 40px;
+.tableau_cours p {
+    text-align: justify;
 }
 
 /* textes et boutons "plus d'informations" des sections: cachés par défaut, s'affichent en fondu (JS) */
 .texte_cours {
-    opacity: 0;
+    /*opacity: 0;*/
     transition: all 1s linear;
 }
 
 .plus_infos {
     width: 80%;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 15px;
     text-decoration: none;
     color: white;
@@ -257,11 +293,10 @@ p {
     border: 1px solid transparent;
     font-size: 20px;
     text-align: center;
-    justify-content: center;
     display: block;
     cursor: pointer;
     transition: all 0.5s linear;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .plus_infos:hover {
@@ -281,7 +316,6 @@ p {
 
 /*conteneur de l'image du moniteur*/
 .coach_img {
-    display: block;
     width: 30%;
     height: auto;
     padding: 10px;
@@ -297,8 +331,8 @@ p {
 .coach_description {
     flex-direction: column;
     display: flex;
-    align-items:center;
-    width: 70%;
+    align-items: center;
+    width: 100%;
 }
 
 .coach_description h2 {
@@ -355,6 +389,7 @@ p {
 }
 .logo_partenaire {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -365,16 +400,15 @@ p {
     width: auto;
     height: 100px;
     border-radius: 15px;
+    margin: 10px;
 }
-
-
 
 /*------------------------------footer------------------------------*/
 footer {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: darkblue;
     border-radius: 15px 15px 0 0;
 }
@@ -385,11 +419,6 @@ tableau dans le footer en 3 colonnes:
     - contact: réeseaux sociaux, téléphone et mail, adresse
     - menu de navigation
 */
-.footer {
-    width: 100%;
-    height: 250px;
-    /*background-color: grey*/
-}
 
 /*colonne 1: logo et slogan*/
 .footer_logo {

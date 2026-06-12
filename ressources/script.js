@@ -1,3 +1,4 @@
+/*
 //------------------------------PAGE ACCUEIL------------------------------
 
 // animation des images des cours : le texte de la section s'affiche au clic sur chaque image
@@ -56,6 +57,7 @@ function afficherFormulaireSelectionCours() {
         - enfin le choix de l'heure en fonction de toute les réponses différentes
 */
 
+/*
 //on commence par récuperer tous les id existant pour l'ensemble des choix et options
     //les cours
     const choixDuCours = document.getElementById('choix_du_cours');
@@ -157,7 +159,7 @@ function afficherNiveauCorrespondant() {
 
 if (choixDuCours) {
     choixDuCours.addEventListener('change', afficherNiveauCorrespondant);
-};*/
+};*//*
     const valeurCours = choixDuCours.value;
 
     if (valeurCours === 'bebes_nageurs' && niveauxBebesNageurs) {
@@ -170,4 +172,4 @@ if (choixDuCours) {
         choixDuNiveau.style.display='block';
         niveauxCoursAdultes.style.display = 'block';
     }
-}
+}*/

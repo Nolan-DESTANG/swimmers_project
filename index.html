@@ -61,8 +61,11 @@
 
     <br>
 
-    <a href="#top" class="back_to_top">↑</a>
     <!--bouton de retour en haut de page-->
+    <a href="#top" class="back_to_top">↑</a>
+
+    <!--bouton de retour à la page d'accueil-->
+    <a href="./index.html" class="back_home">Accueil</a>
 
     <!--section d'accueil avec une image de fond et un message de bienvenue-->
     <div class="presentation">
@@ -74,63 +77,78 @@
     </div>
 
     <!--sections des cours proposés sous forme de 3 colonnes-->
-    <table class="presentation_sections">
-        <!--ligne des images des cours-->
+    <table class="presentation_sections_container">
         <tr>
             <td>
-                <img src="./ressources/images/cours_bebes_nageurs.jpg" alt="Bébé nageur">
+                <!--tableau bébés nageurs-->
+                <table class="tableau_cours">
+                    <tr>
+                        <td>
+                            <img src="./ressources/images/cours_bebes_nageurs.jpg" alt="Bébé nageur">
+                        </td>
+                        <td>
+                            <h2>Bébés nageurs</h2>
+                            <p class="texte_cours">Découvrez nos cours de bébés nageurs, conçus pour initier les tout-petits à l'eau en toute sécurité et avec plaisir à travers des activités ludiques.</p>
+
+                            <a class="plus_infos" href="./bebes_nageurs.html">Découvrez nos cours bébés nageurs</a>
+                        </td>
+                    </tr>
+                </table>
             </td>
-
             <td>
-                <img src="./ressources/images/cours_enfants.jpg" alt="Cours enfants">
+                <!--tableau cours enfants-->
+                <table class="tableau_cours">
+                    <tr>
+                        <td>
+                            <img src="./ressources/images/cours_enfants.jpg" alt="Cours enfants">
+                        </td>
+                        <td>
+                            <h2>Cours enfants</h2>
+                            <p class="texte_cours">Découvrez nos cours d'initiation pour les enfants, conçus pour développer leur confiance et leurs compétences aquatiques.</p>
+
+                            <a class="plus_infos" href="./cours_enfants.html">Découvrez nos cours enfants</a>
+                        </td>
+                    </tr>
+                </table>
             </td>
-
             <td>
-                <img src="./ressources/images/cours_adultes.jpg" alt="Cours adultes">
+                <!--tableau cours adultes-->
+                <table class="tableau_cours">
+                    <tr>
+                        <td>
+                            <img src="./ressources/images/cours_adultes.jpg" alt="Cours adultes">
+                        </td>
+                        <td>
+                            <h2>Cours adultes</h2>
+                            <p class="texte_cours">Découvrez nos cours adultes pour les nageurs apprentis comme expérimentés, conçus pour améliorer leur technique et leur endurance.</p>
+
+                            <a class="plus_infos" href="./cours_adultes.html">Découvrez nos cours adultes</a>
+                        </td>
+                    </tr>
+                </table>
             </td>
-        </tr>
-
-        <!--ligne des noms et descriptions des cours + boutons "Plus d'informations"-->
-        <tr>
-            <td>
-                <h2>Bébés nageurs</h2>
-                <p class="texte_cours">Découvrez nos cours de bébés nageurs, conçus pour initier les tout-petits à l'eau en toute sécurité et avec plaisir à travers des activités ludiques.</p>
-
-                <a class="plus_infos" href="./bebes_nageurs.html">Découvrez nos cours bébés nageurs</a>
-            </td>
-
-            <td>
-                <h2>Cours enfants</h2>
-                <p class="texte_cours">Découvrez nos cours d'initiation pour les enfants, conçus pour développer leur confiance et leurs compétences aquatiques.</p>
-
-                <a class="plus_infos" href="./cours_enfants.html">Découvrez nos cours enfants</a>
-            </td>
-
-            <td>
-                <h2>Cours adultes</h2>
-                <p class="texte_cours">Découvrez nos cours adultes pour les nageurs apprentis comme expérimentés, conçus pour améliorer leur technique et leur endurance.</p>
-
-                <a class="plus_infos" href="./cours_adultes.html">Découvrez nos cours adultes</a>
-            </td>            
         </tr>
     </table>
+    
 
     <br>
     <br>
     <br>
 
     <!--section présentation de l'équipe-->
-    <div class="equipe">
-        <div class="coach_img">
-            <img src="./ressources/images/coach.png" alt="Photo d'un moniteur de natation">
-        </div>
-        <div class="coach_description">
-            <h2>Notre équipe</h2>
-            <p>Notre équipe de moniteurs expérimentés est passionnée par la natation et s'engage à aider chaque nageur à atteindre ses objectifs, que ce soit pour apprendre à nager ou améliorer sa technique.</p>
-            
-            <a class="plus_infos_equipe" href="./notre_equipe.html">Découvrez notre équipe</a>
-        </div>
-    </div>
+    <table class="equipe">
+        <tr>
+            <td class="coach_img">
+                <img src="./ressources/images/coach.png" alt="Photo d'un moniteur de natation">
+            </td>
+            <td class="coach_description">
+                <h2>Notre équipe</h2>
+                <p>Notre équipe de moniteurs expérimentés est passionnée par la natation et s'engage à aider chaque nageur à atteindre ses objectifs, que ce soit pour apprendre à nager ou améliorer sa technique.</p>
+                
+                <a class="plus_infos_equipe" href="./notre_equipe.html">Découvrez notre équipe</a>
+            </td>
+        </tr>
+    </table>
 
     <br>
     <br>
@@ -183,7 +201,7 @@
                     <table>
                         <tr>
                             <!--sous-colonne des réseaux sociaux-->
-                            <td class="contact" style="width: 15%;">
+                            <td class="contact">
                                 <div class="contact_content">
                                     <a href="https://www.instagram.com/" target="_blank">
                                         <img class="logo_reseaux" src="./ressources/images/instagram.png" alt="logo Instagram">
