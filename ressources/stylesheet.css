@@ -1,6 +1,6 @@
 /*------------------------------CSS POUR TAILLE ECRAN PC-----------------------------*/
 
-* {
+/* {
     border: 1px solid black;
 }*/
 
@@ -17,16 +17,6 @@ p {
     font-size: 20px;
     font-family: sans-serif;
 }
-
-
-
-
-
-
-
-
-
-/*------------------------------PAGE D'ACCUEIL------------------------------*/
 
 /*------------------------------Bannière et barre de navigation------------------------------*/
 .banner {
@@ -178,6 +168,7 @@ p {
     opacity: 1;
 }
 
+/*bouton de retour à la page d'accueil*/
 .back_home {
     position: fixed;
     bottom: 20px;
@@ -190,7 +181,8 @@ p {
     border-radius: 50%;
     text-align: center;
     align-content: center;
-    font-size: 11px;
+    font-size: 10px;
+    font-family: sans-serif;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.1s ease-in;
@@ -206,6 +198,147 @@ p {
     opacity: 1;
 }
 
+/*------------------------------footer------------------------------*/
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: darkblue;
+    border-radius: 15px 15px 0 0;
+}
+
+/*
+tableau dans le footer en 3 colonnes:
+    - logo du club et slogan
+    - contact: réeseaux sociaux, téléphone et mail, adresse
+    - menu de navigation
+*/
+
+/*colonne 1: logo et slogan*/
+.footer_logo {
+    width: 20%;
+    flex-direction: column;
+    justify-items: center;
+}
+
+    .footer_logo img {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+        position: relative;
+        left: 10%;
+    }
+
+    /*slogan sous le logo*/
+    .footer_logo h3 {
+        font-size: 20px;
+        justify-content: center;
+        color: white;
+        font-family: Lucida Calligraphy;
+    }
+
+/*colonne 2: contact*/
+.footer_contact {
+    width: 50%;
+}
+
+    /*tableau en 3 colonnes: réseaux, tél et mail, adresse*/
+    .footer_contact table {
+        height: 95%;
+        width: 100%;
+    }
+
+    .contact {
+        width: 33%;
+    }
+
+    /*colonne réseaux*/
+    .contact_content {
+        height: 90%;
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .logo_reseaux {
+        height: 50px;
+        width: auto;
+        border-radius: 15px;
+        transition: all 0.5s linear;
+    }
+
+    .logo_reseaux:hover {
+        transform: scale(1.1);
+    }
+
+    /*colonne téléphone et mail*/
+    .contact p {
+        text-align: center;
+        color: white;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .contact a:hover {
+        text-decoration:underline;
+    }
+
+/*colonne 3: menu de navigation*/
+.footer_nav_menu {
+    width: 30%;
+}
+
+    .footer_nav_menu table {
+        height: 90%;
+        display: flex;
+        justify-content:space-around ;
+    }
+
+    .footer_nav_menu tr {
+        height: 100%;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .footer_nav_menu td {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_nav_menu p {
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .footer_nav_menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .footer_nav_menu a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+
+
+
+/*------------------------------PAGE D'ACCUEIL------------------------------*/
 
 /*--------------------------------présentation du club------------------------------*/
 
@@ -403,147 +536,10 @@ p {
     margin: 10px;
 }
 
-/*------------------------------footer------------------------------*/
-footer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: darkblue;
-    border-radius: 15px 15px 0 0;
-}
-
-/*
-tableau dans le footer en 3 colonnes:
-    - logo du club et slogan
-    - contact: réeseaux sociaux, téléphone et mail, adresse
-    - menu de navigation
-*/
-
-/*colonne 1: logo et slogan*/
-.footer_logo {
-    width: 20%;
-    flex-direction: column;
-    justify-items: center;
-}
-
-    .footer_logo img {
-        width: 80%;
-        height: auto;
-        border-radius: 50%;
-        position: relative;
-        left: 10%;
-    }
-
-    /*slogan sous le logo*/
-    .footer_logo h3 {
-        font-size: 20px;
-        justify-content: center;
-        color: white;
-        font-family: Lucida Calligraphy;
-    }
-
-/*colonne 2: contact*/
-.footer_contact {
-    width: 50%;
-}
-
-    /*tableau en 3 colonnes: réseaux, tél et mail, adresse*/
-    .footer_contact table {
-        height: 95%;
-        width: 100%;
-    }
-
-    .contact {
-        width: 33%;
-    }
-
-    /*colonne réseaux*/
-    .contact_content {
-        height: 90%;
-        display: flex;
-        flex-direction:column;
-        text-align: center;
-        justify-content: space-around;
-    }
-
-    .logo_reseaux {
-        height: 50px;
-        width: auto;
-        border-radius: 15px;
-        transition: all 0.5s linear;
-    }
-
-    .logo_reseaux:hover {
-        transform: scale(1.1);
-    }
-
-    /*colonne téléphone et mail*/
-    .contact p {
-        text-align: center;
-        color: white;
-    }
-
-    .contact a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .contact a:hover {
-        text-decoration:underline;
-    }
-
-/*colonne 3: menu de navigation*/
-.footer_nav_menu {
-    width: 30%;
-}
-
-    .footer_nav_menu table {
-        height: 90%;
-        display: flex;
-        justify-content:space-around ;
-    }
-
-    .footer_nav_menu tr {
-        height: 100%;
-        display:flex;
-        justify-content: space-between;
-    }
-
-    .footer_nav_menu td {
-        width: 200px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer_nav_menu p {
-        color: white;
-        text-align: center;
-        font-family: sans-serif;
-    }
-
-    .footer_nav_menu a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        font-family: sans-serif;
-    }
-
-    .footer_nav_menu a:hover {
-        text-decoration: underline;
-    }
 
 
 
-
-
-
-
-
-
-    /*------------------------------PAGE DES BEBES NAGEURS------------------------------*/
+/*------------------------------PAGE DES BEBES NAGEURS------------------------------*/
 
 /*image de bébés nageurs avec le nom du cours dessus*/
 .titre_cours_bebes {
@@ -552,6 +548,7 @@ tableau dans le footer en 3 colonnes:
     background-image: url(./images/cours_bebes_nageurs.jpg);
     background-size: cover;
     align-content: center;
+    justify-content: center;
 }
 
 .titre_cours {

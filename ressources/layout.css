@@ -68,7 +68,11 @@
 
         .contact_content {
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
+        }
+
+        .contact_content a, .contact_content p {
+            width: 200px;
         }
 
     /*colonne 3 => ligne 3 : Menu de navigation*/
@@ -97,6 +101,11 @@
         .back_home {
             display: block;
         }
+    
+    
+    
+    
+    
     
     
     
@@ -139,4 +148,57 @@
         width: 100%;
     }
     
+    
+
+
+    /*------------------------------PAGE BEBES NAGEURS------------------------------*/
+    /*image et titre du cours*/
+    .titre_cours_bebes {
+        height: 300px;
+    }
+
+    .titre_cours {
+        font-size: 60px;
+    }
+
+    /*tableau des cours bébés nageurs*/
+    #tableau_bebes_nageurs {
+        width: 100%;
+    }
+
+    #tableau_bebes_nageurs tr {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image_cours {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image_cours img{
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .description_cours {
+        width: 100%;
+        padding: 0;
+    }
+
+    .description_cours h2 {
+        text-align: center;
+    }
+
+    .description_cours p {
+        padding: 10px;
+        text-align: justify;
+    }
+
+
 }

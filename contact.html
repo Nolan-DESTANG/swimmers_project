@@ -18,47 +18,42 @@
     <!--bannière avec logo, nom du club et barre de navigation-->
     <table class="banner">
         <tr>
-            <td style="width: 33%;">
+            <td class="logo_container"">
                 <!--logo lien vers la page d'accueil-->
-                <div class="logo_container">
-                    <a href="./index.html">
-                        <img class="logo" src="./ressources/images/logo_banner.jpg" alt="Logo de Swimmers">
-                    </a>
-                </div>
+                <a href="./index.html">
+                    <img class="logo" src="./ressources/images/logo_banner.jpg" alt="Logo de Swimmers">
+                </a>        
             </td>
-            <td style="width: 34%;">
+            <td class="club_name_container">
                  <!--nom du club et barre de navigation en-dessous-->
-                <div class="club_name_container">
-                    <h1 class="club_name">SWIMMERS</h1>
+                <h1 class="club_name">SWIMMERS</h1>
 
-                    <!--barre de navigation-->
-                    <div class="navbar">
-
-                        <!--menu déroulant pour les cours proposés-->
-                        <div class="menu_deroulant">
-                            <a class="nav_link">Nos cours</a>
-                            <div class="options">
-                                <a href="./bebes_nageurs.html">Bébés nageurs</a>
-                                <a href="./cours_enfants.html">Cours enfants</a>
-                                <a href="./cours_adultes.html">Cours adultes</a>
-                                <a href="./inscription.html">Inscription</a>
-                            </div>
+                <!--barre de navigation-->
+                <div class="navbar">
+                    <!--menu déroulant pour les cours proposés-->
+                    <div class="menu_deroulant">
+                        <a class="nav_link">Nos cours</a>
+                        <div class="options">
+                            <a href="./bebes_nageurs.html">Bébés nageurs</a>
+                            <a href="./cours_enfants.html">Cours enfants</a>
+                            <a href="./cours_adultes.html">Cours adultes</a>
+                            <a href="./inscription.html">Inscription</a>
                         </div>
+                    </div>
                 
-                        <a href="./contact.html" class="nav_link">Contact</a>
+                    <a href="./contact.html" class="nav_link">Contact</a>
 
-                        <!--menu deroulant pour le bouton "a propos"-->
-                        <div class="menu_deroulant">
-                            <a class="nav_link">A propos</a>
-                            <div class="options">
-                                <a href="./notre_equipe.html">Notre équipe</a>
-                                <a href="./notre_histoire.html">Notre histoire</a>
-                            </div>
+                    <!--menu deroulant pour le bouton "a propos"-->
+                    <div class="menu_deroulant">
+                        <a class="nav_link">A propos</a>
+                        <div class="options">
+                            <a href="./notre_equipe.html">Notre équipe</a>
+                            <a href="./notre_histoire.html">Notre histoire</a>
                         </div>
                     </div>
                 </div>
             </td>
-            <td style="width: 33%;">
+            <td class="empty_column">
 
             </td>
         </tr>
@@ -69,6 +64,9 @@
     <a href="#top" class="back_to_top">↑</a>
     <!--bouton de retour en haut de page-->
 
+    <!--bouton de retour à la page d'accueil-->
+    <a href="./index.html" class="back_home">Accueil</a>
+    
     <!--image d'un adulte avec le titre du cours-->
     <div class="titre_contact">
         <h1 class="titre_cours_contact">
@@ -192,7 +190,7 @@
                     <table>
                         <tr>
                             <!--sous-colonne des réseaux sociaux-->
-                            <td class="contact" style="width: 15%;">
+                            <td class="contact">
                                 <div class="contact_content">
                                     <a href="https://www.instagram.com/" target="_blank">
                                         <img class="logo_reseaux" src="./ressources/images/instagram.png" alt="logo Instagram">
