@@ -151,6 +151,11 @@
     
 
 
+    
+    
+    
+    
+    
     /*------------------------------PAGE BEBES NAGEURS------------------------------*/
     /*image et titre du cours*/
     .titre_cours_bebes {
@@ -201,4 +206,146 @@
     }
 
 
+
+
+
+
+
+
+
+    /*------------------------------PAGE COURS ENFANTS------------------------------*/
+    .titre_cours_enfants {
+        height: 300PX;
+    }
+
+    /*tableau avec l'image du niveau, le nom et la description du cours*/
+    .niveau_cours tr {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .apprentissages {
+        background-size: 100% 150px;
+        height: 150px;
+    }
+
+    .apprentissages p {
+        margin-left: 6%;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE COURS ADULTES------------------------------*/
+    .titre_cours_adultes {
+        height: 300px;
+    }
+
+    /*images des cours remplacée par d'autres en format paysage*/
+    #image_plus_1000px {
+        display: none;
+    }
+    
+    #image_aquaphobie_content {
+        background-image: url(./images/adultes_aquaphobie_1000px.png);
+        background-size: cover;
+        width: 98%;
+        height: 360px;
+        border-radius: 15px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+
+    #image_crawl_content {
+        background-image: url(./images/adultes_apprentissage_1000px.png);
+        background-size: cover;
+        width: 98%;
+        height: 300px;
+        border-radius: 15px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #image_butterfly_content {
+        background-image: url(./images/adultes_perfectionnement_1000px.png);
+        background-size: cover;
+        width: 98%;
+        height: 300px;
+        border-radius: 15px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE INSCRIPTION------------------------------*/
+    .titre_inscription {
+        height: 300px;
+    }
+
+    /*formulaire d'inscription*/
+    .inscription_in tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE CONTACT------------------------------*/
+    .titre_contact {
+        height: 300px;
+    }
+
+    .titre_cours_contact {
+        font-size: 60px;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE NOTRE EQUIPE------------------------------*/
+    .inscription tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE NOTRE HISTOIRE------------------------------*/
+    .image_de_fond_notre_histoire {
+        height: 300px;
+    }
 }

@@ -1,6 +1,6 @@
 /*------------------------------CSS POUR TAILLE ECRAN PC-----------------------------*/
 
-/* {
+* {
     border: 1px solid black;
 }*/
 
@@ -168,7 +168,7 @@ p {
     opacity: 1;
 }
 
-/*bouton de retour à la page d'accueil*/
+/*------------------------------bouton de retour à la page d'accueil------------------------------*/
 .back_home {
     position: fixed;
     bottom: 20px;
@@ -696,11 +696,6 @@ tableau dans le footer en 3 colonnes:
 
 /*Réutilisation des mêmes paramètres que pour le titre du cours sur l'image*/
 
-/*image de l'emploi du temps*/
-.emploi_du_temps {
-    width: 90%;
-}
-
 /*------------------------------formulaire d'inscription------------------------------*/
 
 /*titre*/
@@ -761,6 +756,11 @@ input[type=text],[type=date], [type=email], [type=number] {
 .selection_du_cours {
     display: none;
     transition:all 05s linear; 
+}
+
+/*image de l'emploi du temps*/
+.emploi_du_temps {
+    width: 90%;
 }
 
 select {

@@ -28,7 +28,7 @@ function afficherDescriptionCours(index) {
         boutonsPlusInfos[index].style.opacity = 1;
     }, delayAffichageBouton);
 };
-
+*/
 
 
 
