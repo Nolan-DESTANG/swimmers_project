@@ -1,0 +1,28 @@
+/*------------------------------CSS POUR TAILLE D'ECRAN EGALE OU INFERIEURE A 500px------------------------------*/
+@media only screen and (max-width: 500px) {
+
+    /*------------------------------FOOTER------------------------------*/
+    /*ligne du logo*/
+        .footer_logo img {
+            height: 100px;
+        }
+
+        .footer_logo h3 {
+            font-size: 20px;
+        }
+    
+    /*ligne 2: contact
+    les lignes des reseaux sociaux et du mail et téléphone se mettent à la verticale*/
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer_nav_menu tr {
+        flex-direction: column;
+    }
+}

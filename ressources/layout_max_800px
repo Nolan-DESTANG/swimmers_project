@@ -1,4 +1,0 @@
-/*------------------------------CSS POUR TAILLE D'ECRAN EGALE OU INFERIEURE A 500px------------------------------*/
-@media only screen and (max-width: 800px) {
-    
-}
