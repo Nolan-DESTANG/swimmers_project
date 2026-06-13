@@ -322,6 +322,16 @@
         font-size: 60px;
     }
 
+    /*tableau des frames maps*/
+    .maps_frame_content tr {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .maps_frame_content td {
+        width: 50%;
+    }
+
 
 
 

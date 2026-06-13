@@ -716,6 +716,10 @@ form {
     width: 100%;
 }
 
+.inscription td {
+    padding: 20px 10px;
+}
+
 .inscription_in {
     width: 100%;
 }
@@ -871,6 +875,14 @@ textarea {
 
 .maps_frame {
     text-align: center;
+}
+
+.maps_frame_content {
+    width: 100%;
+}
+
+.maps_frame_content tr {
+    width: 100%;
 }
 
 iframe {
