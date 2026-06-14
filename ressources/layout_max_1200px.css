@@ -230,6 +230,10 @@
         height: 150px;
     }
 
+    #un_critere {
+        height: 75px;
+    }
+
     .apprentissages p {
         margin-left: 6%;
     }
@@ -302,7 +306,10 @@
     .inscription_in tr {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+    }
+
+    .inscription_in td {
+        display: flex;
     }
 
 
@@ -329,7 +336,11 @@
     }
 
     .maps_frame_content td {
-        width: 50%;
+        width: 100%;
+    }
+
+    .maps_frame_content_in tr {
+        flex-direction: column;
     }
 
 

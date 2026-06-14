@@ -1,0 +1,198 @@
+/*------------------------------CSS POUR TAILLE D'ECRAN EGALE OU INFERIEURE A 600px------------------------------*/
+@media only screen and (max-width: 600px) {
+
+    /*------------------------------HEADER------------------------------*/    
+    /*le menu déroulant du bouton à propos est trop vers la droite, on le déplace sur la geuche pour qu'il rentre dans l'écran*/
+    #options_a_propos {
+        right: 0;
+    }
+
+    /*------------------------------FOOTER------------------------------*/
+    /*ligne du logo*/
+        .footer_logo img {
+            height: 100px;
+        }
+
+        .footer_logo h3 {
+            font-size: 20px;
+        }
+    
+    /*ligne 2: contact
+    les lignes des reseaux sociaux et du mail et téléphone se mettent à la verticale*/
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer_nav_menu tr {
+        flex-direction: column;
+    }
+
+    /*les logos instagram et facebook sont proches l'un de l'autre*/
+    #reseaux_sociaux {
+        justify-content: center;
+    }
+
+    #resau_social {
+        width: 100px;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE D'ACCUEIL (INDEX)------------------------------*/
+    /*section: notre équipe*/
+
+
+    /*section: nos partenaires*/
+    /*les logos des partenaires doivent avoir une taille fixe*/
+    .logo_partenaire img {
+        width: 300px;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE BEBES NAGEURS------------------------------*/
+
+    .titre_cours_bebes {
+        width: 100%;
+        height: 200px;
+    }
+
+    .titre_cours {
+        font-size: 40px;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    /*------------------------------PAGE COURS ENFANTS------------------------------*/
+    .titre_cours_enfants {
+        width: 100%;
+        height: 200px;
+    }
+
+    /*taille des div "lignes d'eau" à régler en fonction de la taille des p*/
+    .apprentissages {
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE COURS ADULTES------------------------------*/
+    .titre_cours_adultes {
+        width: 100%;
+        height: 200px;
+    }
+
+    #titre_cours_adultes {
+        color: white;
+    }
+
+    /*images des cours*/
+    #image_aquaphobie_content {
+        height: 250px;;
+    }
+
+    #image_crawl_content {
+        height: 200px;
+    }
+
+    #image_butterfly_content {
+        height: 200px;
+
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE INSCRIPTION------------------------------*/
+    /*image et nom de la page*/
+    .titre_inscription {
+        width: 100%;
+        height: 200px;
+    }
+
+    #titre_inscription {
+        color: white;
+    }
+
+    /*emplacement des champs du formulaire au centre*/
+    .inscription_in td {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE CONTACT------------------------------*/
+    /*image et nom de la page*/
+    .titre_contact {
+        width: 100%;
+        height: 200px;
+    }
+
+    .titre_cours_contact {
+        font-size: 40px;
+    }
+
+    /*tablau des maps frame*/
+    .maps_frame_content tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+    /*------------------------------PAGE NOTRE HISTOIRE------------------------------*/
+    /*image et nom de la page*/
+    .image_de_fond_notre_histoire {
+        width: 100%;
+        height: 200px;
+    }
+}

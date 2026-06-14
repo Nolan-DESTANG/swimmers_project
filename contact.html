@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="./ressources/stylesheet.css">
     <link rel="stylesheet" href="./ressources/layout_max_1200px.css">
-    <link rel="stylesheet" href="./ressources/layout_max_500px.css">
+    <link rel="stylesheet" href="./ressources/layout_max_600px.css">
     <script src="./ressources/script.js" type="text/javascript" defer></script>
 
     <link rel="icon" href="./ressources/images/logo.jfif" />
@@ -47,7 +47,7 @@
                     <!--menu deroulant pour le bouton "a propos"-->
                     <div class="menu_deroulant">
                         <a class="nav_link">A propos</a>
-                        <div class="options">
+                        <div class="options" id="options_a_propos">
                             <a href="./notre_equipe.html">Notre équipe</a>
                             <a href="./notre_histoire.html">Notre histoire</a>
                         </div>
@@ -137,29 +137,39 @@
 
     <h1 class="formulaire">Pour nous trouver</h1>
 
-    <table class="maps_frame_content">
+    <table class="maps_frame_content"> <!--un tableau contenant les maps frame-->
         <tr>
             <td>
-                <h1 class="formulaire">Nos cours</h1>
+                <table class="maps_frame_content_in"> <!--tableau d'un maps frame: necessaire pour le layout sur petit écran-->
+                    <tr>
+                        <td>
+                            <h1 class="formulaire">Nos cours</h1>
+                        </td>
+                        <td class="maps_frame">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.6649993907977!2d6.1332118!3d46.217118799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64dd504c1d4f%3A0x3fdbfd2111fed8a2!2sPiscine%20de%20Chandieu!5e0!3m2!1sfr!2sfr!4v1780915460438!5m2!1sfr!2sfr" 
+                                allowfullscreen="1" 
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </td>
+                    </tr>
+                </table>
             </td>
             <td>
-                <h1 class="formulaire">Nos bureaux</h1>
-            </td>
-        </tr>
-        <tr>
-            <td class="maps_frame">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.6649993907977!2d6.1332118!3d46.217118799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64dd504c1d4f%3A0x3fdbfd2111fed8a2!2sPiscine%20de%20Chandieu!5e0!3m2!1sfr!2sfr!4v1780915460438!5m2!1sfr!2sfr" 
-                    allowfullscreen="1" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </td>
-            <td class="maps_frame">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22084.069776374203!2d6.0896053!3d46.2202272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c649678a18cad%3A0xf0a4fee07eba2c44!2sAdministration%20locale!5e0!3m2!1sfr!2sfr!4v1780915763763!5m2!1sfr!2sfr" 
-                    allowfullscreen="1" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <table class="maps_frame_content_in"> <!--tableau d'un maps frame: necessaire pour le layout sur petit écran-->
+                    <tr>
+                        <td>
+                            <h1 class="formulaire">Nos bureaux</h1>
+                        </td>
+                        <td class="maps_frame">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22084.069776374203!2d6.0896053!3d46.2202272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c649678a18cad%3A0xf0a4fee07eba2c44!2sAdministration%20locale!5e0!3m2!1sfr!2sfr!4v1780915763763!5m2!1sfr!2sfr" 
+                                allowfullscreen="1" 
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
@@ -192,11 +202,11 @@
                         <tr>
                             <!--sous-colonne des réseaux sociaux-->
                             <td class="contact">
-                                <div class="contact_content">
-                                    <a href="https://www.instagram.com/" target="_blank">
+                                <div class="contact_content" id="reseaux_sociaux">
+                                    <a href="https://www.instagram.com/" target="_blank" id="resau_social">
                                         <img class="logo_reseaux" src="./ressources/images/instagram.png" alt="logo Instagram">
                                     </a>                                    
-                                    <a href="https://fr-fr.facebook.com/" target="_blank">
+                                    <a href="https://fr-fr.facebook.com/" target="_blank" id="resau_social">
                                         <img class="logo_reseaux" src="./ressources/images/facebook.png" alt="logo Facebook">
                                     </a>
                                 </div>

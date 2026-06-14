@@ -1,6 +1,6 @@
 /*------------------------------CSS POUR TAILLE ECRAN PC-----------------------------*/
 
-/* {
+* {
     border: 1px solid black;
 }*/
 
@@ -105,7 +105,6 @@ p {
     min-width: 160px;
     z-index: 100;
     transition: all 0.5s linear;
-    padding-top: 10px;
 }
 
 .menu_deroulant:hover .options {
@@ -444,14 +443,12 @@ tableau dans le footer en 3 colonnes:
 /*conteneur principal*/
 .equipe {
     display: flex;
-    align-items: center;
 }
 
 /*conteneur de l'image du moniteur*/
 .coach_img {
     width: 30%;
     height: auto;
-    padding: 10px;
 }
 
 .coach_img img {
@@ -644,6 +641,10 @@ tableau dans le footer en 3 colonnes:
     align-content: space-around;
 }
 
+#un_critere {
+    height: 62.5px;
+}
+
 .apprentissages p {
     margin-left: 100px;
     font-weight: bold;
@@ -714,10 +715,6 @@ form {
 /*tableau*/
 .inscription {
     width: 100%;
-}
-
-.inscription td {
-    padding: 20px 10px;
 }
 
 .inscription_in {
@@ -873,16 +870,27 @@ textarea {
     text-decoration: underline;
 }
 
-.maps_frame {
-    text-align: center;
-}
-
+/*un tableau contenant les maps frame*/
 .maps_frame_content {
     width: 100%;
 }
 
 .maps_frame_content tr {
     width: 100%;
+}
+
+/*tableau pour chaque maps frame, necessaire pour le layout sur petit écran*/
+.maps_frame_content_in {
+    width: 100%;
+}
+
+.maps_frame_content_in tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.maps_frame {
+    text-align: center;
 }
 
 iframe {
