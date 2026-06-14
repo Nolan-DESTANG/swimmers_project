@@ -259,6 +259,7 @@
     #image_aquaphobie_content {
         background-image: url(./images/adultes_aquaphobie_1000px.png);
         background-size: cover;
+        background-position: bottom;
         width: 98%;
         height: 360px;
         border-radius: 15px;
@@ -270,6 +271,7 @@
     #image_crawl_content {
         background-image: url(./images/adultes_apprentissage_1000px.png);
         background-size: cover;
+        background-position: center;
         width: 98%;
         height: 300px;
         border-radius: 15px;
@@ -281,6 +283,7 @@
     #image_butterfly_content {
         background-image: url(./images/adultes_perfectionnement_1000px.png);
         background-size: cover;
+        background-position: center;
         width: 98%;
         height: 300px;
         border-radius: 15px;
