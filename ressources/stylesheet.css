@@ -748,10 +748,10 @@ input[type=text],[type=date], [type=email], [type=number] {
 }
 
 /*ligne des informations pour le tuteur*/
-/*.tuteur {
+.tuteur {
     display: none;
     transition: all 0.5s linear;
-}*/
+}
 
 /*div de selection du cours caché jusqu'au clic sur le bouton "passer à la selection du cours"*/
 .selection_du_cours {
@@ -789,10 +789,13 @@ option {
     color: black;
 }
 
-/*placement des selecteurs de niveaux au même endroit*/
-/*#niveaux_bebes_nageurs, #niveaux_cours_enfants, #niveaux_cours_adultes, #niveau, #creneau, #bouton_de_confirmation {
+/*options des selecteurs non affichées*/
+#niveaux_bebes_nageurs, #niveaux_cours_enfants, #niveaux_cours_adultes,
+#lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi,
+#matin, #midi, #apres_midi, #soir,
+#bouton_de_confirmation {
     display: none;
-}*/
+}
 
 /*bouton de confirmation similaire aux autres boutons du site*/
 button {

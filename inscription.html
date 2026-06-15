@@ -100,16 +100,16 @@
                             </td>
                             <td>
                                 <label for="age">Date de naissance*</label> <br>
-                                <input type="date" id="date_de_naissance" name="date de naissance" min="01-01-1900" placeholder="Date de naissance du participant">
+                                <input type="date" id="date_de_naissance_participant" name="date de naissance" min="01-01-1900" placeholder="Date de naissance du participant">
                             </td>
                         </tr>
                         <tr class="tuteur"> <!--ligne du tuteur-->
                             <td>
-                                <label for="prénom_tuteur">Prénom du tuteur*</label> <br>
+                                <label for="prénom_tuteur">Prénom du parent*</label> <br>
                                 <input type="text" id="prenom" name="prenom" placeholder="Prénom du tuteur">
                             </td>
                             <td>
-                                <label for="nom_tuteur">Nom du tuteur*</label> <br>
+                                <label for="nom_tuteur">Nom du parent*</label> <br>
                                 <input type="text" id="nom" name="nom" placeholder="Nom du tuteur">
                             </td>
                             <td>
@@ -186,20 +186,20 @@
                 <tr> <!--ligne du choix du cours et du niveau souhaité-->
                     <td id="groupe"> <!--choix du cours-->
                         <label for="choix_du_cours">Selectionnez le cours que vous souhaitez</label> <br>
-                        <select name="choix_du_cours" id="choix_du_cours" required>
+                        <select name="choix_du_cours" id="choix_du_cours">
                             <option value="bebes_nageurs" id="bebes_nageurs">Bébés nageurs</option>
                             <option value="cours_enfants" id="cours_enfants">Cours enfants</option>
                             <option value="cours_adultes" id="cours_adultes">Cours adultes</option>
                         </select>
                     </td>
                     <td id="niveau"> <!--choix du niveau en fonction du choix précédent-->
-                        <label for="choix_du_niveau" id="choix_du_niveau">Selectionnez le niveau que vous souhaitez</label> <br>
-                        <select name="selection_niveau" id="selection_niveau">
+                        <label for="choix_du_niveau">Selectionnez le niveau que vous souhaitez</label> <br>
+                        <select name="selection_niveau" id="selection_niveau" required>
                             <optgroup label="Cours bébés nageurs" id="niveaux_bebes_nageurs">
-                                <option value="BB_6-12" id="bb_6_12">Bébés nageurs 6-12 mois</option>
-                                <option value="BB_1-2" id="bb_1_2">Bébés nageurs 1-2 ans</option>
-                                <option value="BB_2-3" id="bb_2_3">Bébés nageurs 2-3 ans</option>
-                                <option value="BB_3-4" id="bb_3_4">Bébé nageurs 3-4 ans</option>
+                                <option value="BB_6_12" id="bb_6_12">Bébés nageurs 6-12 mois</option>
+                                <option value="BB_1_2" id="bb_1_2">Bébés nageurs 1-2 ans</option>
+                                <option value="BB_2_3" id="bb_2_3">Bébés nageurs 2-3 ans</option>
+                                <option value="BB_3_4" id="bb_3_4">Bébés nageurs 3-4 ans</option>
                             </optgroup>
                             <optgroup label="Cours enfants" id="niveaux_cours_enfants">
                                 <option value="Niveau_coquillage" id="Niveau_coquillage">Niveau coquillage</option>
@@ -221,7 +221,7 @@
                 </tr>
                 <tr id="creneau"> <!--ligne du choix du créneau-->
                     <td> <!--choix du jour-->
-                        <label for="choix_du_jour" id="choix_du_jour">Selectionnez le jour que vous souhaitez</label> <br>
+                        <label for="choix_du_jour">Selectionnez le jour que vous souhaitez</label> <br>
                         <select name="choix_jour" id="choix_jour" required>
                             <option value="lundi" id="lundi">Lundi</option>
                             <option value="mardi" id="mardi">Mardi</option>
@@ -232,7 +232,7 @@
                         </select>
                     </td>
                     <td id="horaire"> <!--choix de l'heure en fonction du cours et jour choisis-->
-                        <label for="choix_horaire" id="choix_horaire">Selectionnez l'horaire que vous souhaitez</label> <br>
+                        <label for="choix_horaire" >Selectionnez l'horaire que vous souhaitez</label> <br>
                         <select name="choix_de_l_heure" id="choix_de_l_heure" required>
                             <optgroup label="Matin" id="matin">
                                 <option value="9h00" id="9_00">09:00</option>
