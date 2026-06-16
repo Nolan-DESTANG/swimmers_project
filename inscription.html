@@ -187,6 +187,7 @@
                     <td id="groupe"> <!--choix du cours-->
                         <label for="choix_du_cours">Selectionnez le cours que vous souhaitez</label> <br>
                         <select name="choix_du_cours" id="choix_du_cours">
+                            <option value="cours_souhaite">Cours souhaité</option>
                             <option value="bebes_nageurs" id="bebes_nageurs">Bébés nageurs</option>
                             <option value="cours_enfants" id="cours_enfants">Cours enfants</option>
                             <option value="cours_adultes" id="cours_adultes">Cours adultes</option>
@@ -195,11 +196,12 @@
                     <td id="niveau"> <!--choix du niveau en fonction du choix précédent-->
                         <label for="choix_du_niveau">Selectionnez le niveau que vous souhaitez</label> <br>
                         <select name="selection_niveau" id="selection_niveau" required>
+                                <option value="niveau_souhaite">Niveau souhaité</option>
                             <optgroup label="Cours bébés nageurs" id="niveaux_bebes_nageurs">
-                                <option value="BB_6_12" id="bb_6_12">Bébés nageurs 6-12 mois</option>
-                                <option value="BB_1_2" id="bb_1_2">Bébés nageurs 1-2 ans</option>
-                                <option value="BB_2_3" id="bb_2_3">Bébés nageurs 2-3 ans</option>
-                                <option value="BB_3_4" id="bb_3_4">Bébés nageurs 3-4 ans</option>
+                                <option value="bb_6_12" id="bb_6_12">Bébés nageurs 6-12 mois</option>
+                                <option value="bb_1_2" id="bb_1_2">Bébés nageurs 1-2 ans</option>
+                                <option value="bb_2_3" id="bb_2_3">Bébés nageurs 2-3 ans</option>
+                                <option value="bb_3_4" id="bb_3_4">Bébés nageurs 3-4 ans</option>
                             </optgroup>
                             <optgroup label="Cours enfants" id="niveaux_cours_enfants">
                                 <option value="Niveau_coquillage" id="Niveau_coquillage">Niveau coquillage</option>
@@ -223,6 +225,7 @@
                     <td> <!--choix du jour-->
                         <label for="choix_du_jour">Selectionnez le jour que vous souhaitez</label> <br>
                         <select name="choix_jour" id="choix_jour" required>
+                            <option value="jour_souhaite">Jour souhaité</option>
                             <option value="lundi" id="lundi">Lundi</option>
                             <option value="mardi" id="mardi">Mardi</option>
                             <option value="mercredi" id="mercredi">Mercredi</option>
@@ -232,8 +235,10 @@
                         </select>
                     </td>
                     <td id="horaire"> <!--choix de l'heure en fonction du cours et jour choisis-->
-                        <label for="choix_horaire" >Selectionnez l'horaire que vous souhaitez</label> <br>
-                        <select name="choix_de_l_heure" id="choix_de_l_heure" required>
+                        <label for="message_horaire" id="label_message_horaire" >Horaire du cours</label> <br>
+                        <p id="horaire_cours"></p>
+
+                        <!--<select name="choix_de_l_heure" id="choix_de_l_heure" required>
                             <optgroup label="Matin" id="matin">
                                 <option value="9h00" id="9_00">09:00</option>
                                 <option value="9h30" id="9_30">09:30</option>
@@ -270,7 +275,7 @@
                                 <option value="20h00" id="20_00">20:00</option>
                                 <option value="20h15" id="20_15">20:15</option>
                             </optgroup>
-                        </select>
+                        </select>-->
                     </td>
                 </tr>
             </table>

@@ -32,6 +32,11 @@ function afficherDescriptionCours(index) {
 
 
 
+
+
+
+
+
 //------------------------------PAGE INSCRIPTION------------------------------
 
 //dans le tableau d'informations personnelles, la ligne du tuteur s'affiche uniquement si l'âge du participant est inférieur à 18 ans
@@ -88,6 +93,11 @@ if (champDateNaissance) {
 
 
 
+
+
+
+
+
 //le formulaire de selection du cours s'affiche au clic sur le bouton "passer à la selection du cours"
 const boutonSelectionCours = document.getElementById('bouton_selection_cours');
 const divSelectionCours = document.getElementById('selection_du_cours');
@@ -99,6 +109,11 @@ if (boutonSelectionCours && divSelectionCours) {
 function afficherFormulaireSelectionCours() {
     divSelectionCours.style.display = 'block';
 };
+
+
+
+
+
 
 
 
@@ -191,6 +206,19 @@ function afficherFormulaireSelectionCours() {
     const vingtHeure = document.getElementById('20_00');
     const vingtHeureQuinze = document.getElementById('20_15');
 
+    //label et message pour l'heure du cours
+    const labelMessageHoraire = document.getElementById('label_message_horaire');
+    labelMessageHoraire.style.display = 'none';
+
+    const messageHoraire =document.getElementById('horaire_cours');
+
+    //bouton de confirmation pour inscription
+    const boutonDeConfirmation = document.getElementById('bouton_de_confirmation');
+    boutonDeConfirmation.style.display = 'none';
+
+
+
+
 //fonction pour afficher les niveaux corespondants au cours choisi
 function afficherNiveauxCorrespondants(choixDuCours) {
 
@@ -215,10 +243,13 @@ choixDuCours.addEventListener('change', (selectionNiveau) => {
     afficherNiveauxCorrespondants(selectionNiveau.target);
 });
 
+
+
+
 //fonction pour afficher les jours correspondants au niveau selectionné
 function joursCorrespondant(selectionNiveau) {
 
-    if (selectionNiveau.value === 'BB_6_12') {
+    if (selectionNiveau.value === 'bb_6_12') {
         lundi.style.display = 'none';
         mardi.style.display = 'none';
         mercredi.style.display = 'block';
@@ -226,7 +257,7 @@ function joursCorrespondant(selectionNiveau) {
         vendredi.style.display = 'none';
         samedi.style.display = 'block';
 
-    } else if (selectionNiveau.value === 'BB_1_2') {
+    } else if (selectionNiveau.value === 'bb_1_2') {
         lundi.style.display = 'none';
         mardi.style.display = 'none';
         mercredi.style.display = 'block';
@@ -234,7 +265,7 @@ function joursCorrespondant(selectionNiveau) {
         vendredi.style.display = 'none';
         samedi.style.display = 'block';
         
-    } else if (selectionNiveau.value === 'BB_2_3') {
+    } else if (selectionNiveau.value === 'bb_2_3') {
         lundi.style.display = 'none';
         mardi.style.display = 'none';
         mercredi.style.display = 'block';
@@ -242,7 +273,7 @@ function joursCorrespondant(selectionNiveau) {
         vendredi.style.display = 'none';
         samedi.style.display = 'block';
         
-    } else if (selectionNiveau.value === 'BB_3_4') {
+    } else if (selectionNiveau.value === 'bb_3_4') {
         lundi.style.display = 'none';
         mardi.style.display = 'none';
         mercredi.style.display = 'block';
@@ -346,4 +377,131 @@ selectionNiveau.addEventListener('change', (choixJour) => {
     joursCorrespondant(choixJour.target);
 });
 
-//fonction qui affiche un message avec l'heure du cours en fonction du niveau et du jour choisi
+
+
+
+//fonction qui affiche un message avec l'heure du cours en fonction du niveau et du jour choisis
+
+//ESSAI 1: double conditionnement
+function message (selectionNiveau, choixJour) {
+    //bébés 6 à 12 mois
+    if (selectionNiveau.value === 'bb_6_12' && choixJour.value === 'mercredi') { //si le niveau choisi est "bébés 6 à 12 mois" et que le jour choisi est "mercredi"
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 9h00.';
+        boutonDeConfirmation.style.display = 'block';
+
+    } else if (selectionNiveau.value === 'bb_6_12' && choixJour.value === 'samedi') { //si le niveau choisi est "bébés 6 à 12 mois" et que le jour choisi est "samedi"
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 9h00.';
+        boutonDeConfirmation.style.display = 'block';
+    //bébés 1 à 2 ans
+    } else if (selectionNiveau.value === 'bb_1_2' && choixJour.value === 'mercredi') {
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 9h30.';
+        boutonDeConfirmation.style.display = 'block';
+        
+    } else if (selectionNiveau.value === 'bb_1_2' && choixJour.value === 'samedi') {
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 9h30.';
+        boutonDeConfirmation.style.display = 'block';
+    //bébés de 2 à 3 ans
+    } else if (selectionNiveau.value === 'bb_2_3' && choixJour.value === 'mercredi') {
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 10h00.';
+        boutonDeConfirmation.style.display = 'block';
+        
+    } else if (selectionNiveau.value === 'bb_2_3' && choixJour.value === 'samedi') {
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 10h00.';
+        boutonDeConfirmation.style.display = 'block';
+    //bébés de 3 à 4 ans
+    } else if (selectionNiveau.value === 'bb_3_4' && choixJour.value === 'mercredi') {
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 10h30.';
+        boutonDeConfirmation.style.display = 'block';
+        
+    } else if (selectionNiveau.value === 'bb_3_4' && choixJour.value === 'samedi') {
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 10h30.';
+        boutonDeConfirmation.style.display = 'block';
+        
+    } else {
+        labelMessageHoraire.style.display = 'block';
+        messageHoraire.innerHTML = 'Veuillez selectionner des choix valides.';
+        boutonDeConfirmation.style.display = 'none';
+    };
+};
+
+choixJour.addEventListener ('change', (labelMessageHoraire, messageHoraire, boutonDeConfirmation) => {
+    message(labelMessageHoraire, messageHoraire, boutonDeConfirmation);
+});
+//RESULTAT: échec, seul le message du 'else' s'affiche peu importe les choix selectionnés.
+
+
+//ESSAI 2: intra-conditionnement
+/*function message (selectionNiveau, choixJour) {
+    //bébés 6 à 12 mois
+    if (selectionNiveau.value === 'bb_6_12') {
+        if (choixJour.value === 'mercredi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 9h00.';
+            boutonDeConfirmation.style.display = 'block';
+
+        } else if (choixJour.value === 'samedi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 9h00.';
+            boutonDeConfirmation.style.display = 'block';
+        }
+
+    } else if (selectionNiveau.value === 'bb_1_2') {
+        if (choixJour.value === 'mercredi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 9h30.';
+            boutonDeConfirmation.style.display = 'block';
+
+        } else if (choixJour.value === 'samedi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 9h30.';
+            boutonDeConfirmation.style.display = 'block';
+        }
+
+    } else if (selectionNiveau.value === 'bb_2_3') {
+        if (choixJour.value === 'mercredi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 10h00.';
+            boutonDeConfirmation.style.display = 'block';
+
+        } else if (choixJour.value === 'samedi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 10h00.';
+            boutonDeConfirmation.style.display = 'block';
+        }
+
+    } else if (selectionNiveau.value === 'bb_3_4') {
+        if (choixJour.value === 'mercredi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le mercredi à 10h30.';
+            boutonDeConfirmation.style.display = 'block';
+
+        } else if (choixJour.value === 'samedi') {
+            messageHoraire.innerHTML = 'Votre cours Bébés Nageurs a lieu le samedi à 10h30.';
+            boutonDeConfirmation.style.display = 'block';
+        }
+
+    } else if (selectionNiveau.value === 'Niveau_coquillage') {
+        if (choixJour.value === 'mercredi') {
+            messageHoraire.innerHTML = 'Votre niveau Coquillage a lieu le mercredi à 11h00.';
+            boutonDeConfirmation.style.display = 'block';
+
+        } else if (choixJour.value === 'vendredi') {
+            messageHoraire.innerHTML = 'Votre cours niveau Coquilage a lieu le vendredi à 18h30.';
+            boutonDeConfirmation.style.display = 'block';
+
+        } else if (choixJour.value === 'samedi') {
+            messageHoraire.innerHTML = 'Votre cours niveau Coquilage a lieu le samedi à 11h00.';
+            boutonDeConfirmation.style.display = 'block';
+        }
+    } else {
+        messageHoraire.innerHTML = 'Veuillez selectionner des choix valides.';
+
+    }
+};
+
+selectionNiveau || choixJour.addEventListener ('change', (messageHoraire) => {
+    message(messageHoraire);
+});*/
+
+//RESULTAT: seul le message du 'else' s'affiche, les conditions 'else if' n'affichent ou ne modifient en rien le message
